@@ -1,0 +1,3475 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tel Aviv University
+\end_layout
+
+\begin_layout Author
+Faculty of Natural Sciences
+\end_layout
+
+\begin_layout Author
+School of Graduate Studies
+\end_layout
+
+\begin_layout Title
+Charged Holographic Strings
+\end_layout
+
+\begin_layout Author
+A Thesis submitted toward the degree of Master of Science in Physics
+\end_layout
+
+\begin_layout Author
+by Lior Blech
+\end_layout
+
+\begin_layout Section*
+Acknowledgements
+\end_layout
+
+\begin_layout Section*
+Abstract
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Introduction
+\end_layout
+
+\begin_layout Section
+Regge Trajectories and the Spinnig string
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=-T\iint_{(0,-l_{2})}^{(T,l_{1})}d^{2}\sigma\sqrt{-\det h}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h=\left(\begin{array}{cc}
+\cfrac{dx^{\mu}}{d\tau}\cfrac{dx_{\mu}}{d\tau} & \cfrac{dx^{\mu}}{d\tau}\cfrac{dx_{\mu}}{d\sigma}\\
+\cfrac{dx^{\mu}}{d\tau}\cfrac{dx_{\mu}}{d\sigma} & \cfrac{dx^{\mu}}{d\sigma}\cfrac{dx_{\mu}}{d\sigma}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can write for short 
+\begin_inset Formula $V^{\mu}=\cfrac{dx^{\mu}}{d\sigma},u^{\mu}\cfrac{dx^{\mu}}{d\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h=\left(\begin{array}{cc}
+u^{2} & u\cdot V\\
+u\cdot V & V^{2}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=-T\iint_{(0,-l_{2})}^{(T,l_{1})}d^{2}\sigma\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=\int\mathcal{L}d^{2}\sigma+\int Ld\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+variate the solution by an infinitesimal function 
+\begin_inset Formula $\delta x^{\mu}(\sigma,\tau)$
+\end_inset
+
+ such that 
+\begin_inset Formula $\delta x^{\mu}(0)=\delta x^{\mu}(T)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta S=\int\left(\frac{\partial\mathcal{L}}{\partial x^{\mu}}\delta x^{\mu}+\frac{\partial\mathcal{L}}{\partial(\partial_{\alpha}x^{\mu})}\partial_{\alpha}\delta x^{\mu}\right)d^{2}\sigma=\int\left(\frac{\partial\mathcal{L}}{\partial x^{\mu}}-\partial_{\alpha}\left(\frac{\partial\mathcal{L}}{\partial(\partial_{\alpha}x^{\mu})}\right)\right)\delta x^{\mu}d^{2}\sigma+\int\frac{\partial\mathcal{L}}{\partial(\partial_{\sigma}x^{\mu})}\delta x^{\mu}|_{\sigma=-l_{2}}^{\sigma=l_{1}}d\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So requiring no variation to first order in the action:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial x^{\mu}}-\partial_{\alpha}\left(\frac{\partial\mathcal{L}}{\partial(\partial_{\alpha}x^{\mu})}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial(\partial_{\sigma}x^{\mu})}=-T\cfrac{\left(u\cdot V\right)u_{\mu}-u^{2}V_{\mu}}{\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}}=0$
+\end_inset
+
+ or 
+\begin_inset Formula $\delta x^{\mu}=0$
+\end_inset
+
+ at the end points.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial(\partial_{\sigma}x^{\mu})}|_{\sigma=-l_{2}}^{\sigma=l_{1}}=\frac{\partial\mathcal{L}}{\partial V^{\mu}}|_{\sigma=-l_{2}}^{\sigma=l_{1}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u=\left(1,\vec{v}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=\left(0,\cfrac{\vec{x}}{r}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One possible solution of the equations of motion is that of an open rotating
+ string.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+t=\tau\\
+x=\sigma\cdot sin\left(\omega\tau\right) & y=\sigma\cdot cos\left(\omega\tau\right)\\
+z=const
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u=\left(1,\omega\sigma\cdot cos\left(\omega\tau\right),-\omega\sigma\cdot sin\left(\omega\tau\right),0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\left(0,sin\left(\omega\tau\right),cos\left(\omega\tau\right),0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The free endpoint boundary condition translates to
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\mu=0 & T\cfrac{\vec{v}\cdot\vec{V}}{\sqrt{1-\omega^{2}\sigma^{2}}}=0\\
+\mu=i & T\sqrt{1-\omega^{2}\sigma^{2}}V^{i}=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The timelike part is satisfied for any rotating string.
+ The spacelike parts are satisfied when 
+\begin_inset Formula $\omega l=1$
+\end_inset
+
+.
+ Later when dealing with massive endpoints this condition will be relaxed.
+\end_layout
+
+\begin_layout Standard
+We can calculate the energy and angular momentum of this configuration in
+ poincare coordinates.
+\end_layout
+
+\begin_layout Standard
+Because we use the static gauge, the energy can either be calculated as
+ the hamiltonian in the static gauge, or gauge independently as the Noether
+ current for the transformation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta t=\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the hamiltonian approach we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=-T\iint_{(0,-l_{2})}^{(T,l_{1})}d^{2}\sigma\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}=-T\iint_{(0,-l_{2})}^{(T,l_{1})}dtd\sigma\sqrt{\left(\vec{v}\cdot\vec{V}\right)^{2}+\left(1-\vec{v}^{2}\right)\vec{V}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E^{gf}=\int_{-l_{2}}^{l1}d\sigma\left(\cfrac{\partial\mathcal{L}}{\partial v^{i}}v^{i}-\mathcal{L}\right)=T\int_{-l_{2}}^{l1}d\sigma\cfrac{\vec{V}^{2}}{\sqrt{\left(\vec{v}\cdot\vec{V}\right)^{2}+\left(1-\vec{v}^{2}\right)\vec{V}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inserting the spinning string solution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u=\left(1,\omega\sigma\cdot cos\left(\omega\tau\right),-\omega\sigma\cdot sin\left(\omega\tau\right),0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\left(0,sin\left(\omega\tau\right),cos\left(\omega\tau\right),0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=T\int_{-l_{2}}^{l1}d\sigma\cfrac{1}{\sqrt{1-\omega^{2}\sigma^{2}}}=T\int_{-l_{2}}^{l1}d\sigma\cfrac{1}{\sqrt{1-\omega^{2}\sigma^{2}}}=\cfrac{T}{\omega}sin^{-1}\left(\omega l\right)=\cfrac{2T}{\omega}sin^{-1}\left(1\right)=\cfrac{\pi T}{\omega}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The angular momentum is calculated as the Noether current for the rotation
+ transformation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta x=-y\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta y=x\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+More convinently we can go to polar coordinates and formulate the rotation
+ as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta\theta=\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=-T\iint_{(0,-l_{2})}^{(T,l_{1})}dtdr\sqrt{1-\dot{\theta}^{2}r^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=\int_{-l_{2}}^{l1}d\sigma\cfrac{\partial\mathcal{L}}{\partial\dot{\theta}}\dot{\theta}=T\int_{-l_{2}}^{l_{1}}dr\cfrac{\dot{\theta}^{2}r^{2}}{\sqrt{1-\dot{\theta}^{2}r^{2}}}=\cfrac{T}{\omega}\left(sin^{-1}\left(\omega r\right)-\omega r\sqrt{1-\omega^{2}r^{2}}\right)=\cfrac{\pi T}{2\omega}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can combine the two relations and obtain
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=\frac{1}{2}\cfrac{T}{\omega}\left(sin^{-1}\left(\omega r\right)-\omega r\sqrt{1-\omega^{2}r^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\cfrac{T}{\omega}sin^{-1}\left(\omega r\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The AdS/CFT Duality
+\end_layout
+
+\begin_layout Section
+Confining backgrounds
+\end_layout
+
+\begin_layout Section
+Spinning Massive Strings
+\end_layout
+
+\begin_layout Part
+Charged Holographic Strings
+\end_layout
+
+\begin_layout Standard
+In this section, we calculate the energy and angular momentum for a massive
+ spinning string with charges added to the endpoints.
+ This also necessiatates the calculation of the electric and magnetic fields
+ at the endpoints.
+\end_layout
+
+\begin_layout Section
+The action
+\end_layout
+
+\begin_layout Standard
+We add charges to the end points by considering the action from the previous
+ section and adding two electromagnetic interaction lagrangians at the endpoints.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=-T\iint_{(0,-l_{2})}^{(T,l_{1})}d^{2}\sigma\sqrt{-\det h}-m\int_{0}^{T}d\tau\sqrt{u^{\mu}u_{\mu}}|_{\sigma=-l_{2}}^{\sigma=l_{1}}-q\int_{0}^{T}u^{\mu}A_{\mu}d\tau|_{\sigma=-l_{2}}^{\sigma=l_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The field lagrangian density for the electromagnetic fields is not included
+ to avoid divergent self energy terms .Instead, the electromagnetic potentials
+ and fields are determined directly by the Lienard-Wichert formulas.
+ The worldsheet metric is as usual:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h=\left(\begin{array}{cc}
+\cfrac{dx^{\mu}}{d\tau}\cfrac{dx_{\mu}}{d\tau} & \cfrac{dx^{\mu}}{d\tau}\cfrac{dx_{\mu}}{d\sigma}\\
+\cfrac{dx^{\mu}}{d\tau}\cfrac{dx_{\mu}}{d\sigma} & \cfrac{dx^{\mu}}{d\sigma}\cfrac{dx_{\mu}}{d\sigma}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can write for short 
+\begin_inset Formula $V^{\mu}=\cfrac{dx^{\mu}}{d\sigma},u^{\mu}\cfrac{dx^{\mu}}{d\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h=\left(\begin{array}{cc}
+u^{2} & u\cdot V\\
+u\cdot V & V^{2}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The action can be writen then as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=-T\iint_{(0,-l_{2})}^{(T,l_{1})}d^{2}\sigma\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}-m\int_{0}^{T}d\tau\sqrt{u^{\mu}u_{\mu}}|_{\sigma=-l_{2}}^{\sigma=l_{1}}-q\int_{0}^{T}u^{\mu}A_{\mu}d\tau|_{\sigma=-l_{2}}^{\sigma=l_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the gauge 
+\begin_inset Formula $\begin{cases}
+t=\tau\\
+r=\sigma
+\end{cases}$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+The 4 velocity is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u^{\mu}=\left(\cfrac{dt}{d\tau},\cfrac{dx}{d\tau},\cfrac{dy}{d\tau},\cfrac{dz}{d\tau}\right)=\left(1,\sigma\cfrac{dcos\left(\theta\right)}{d\tau},\sigma\cfrac{dsin\left(\theta\right)}{d\tau},\cfrac{dz}{d\tau}\right)=\left(1,-\sigma\dot{\theta}sin\left(\theta\right),\sigma\dot{\theta}cos\left(\theta\right),\cfrac{dz}{d\tau}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V^{\mu}=\left(\cfrac{dt}{d\sigma},\cfrac{dx}{d\sigma},\cfrac{dy}{d\sigma},\cfrac{dz}{d\sigma}\right)=\left(0,cos\left(\theta\right),sin\left(\theta\right),\cfrac{dz}{d\sigma}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The basis vectors for polar coordinates are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{r}=\cfrac{1}{r}\left(x\hat{x}+y\hat{y}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{\theta}=\cfrac{1}{r}\left(x\hat{y}-y\hat{x}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Both of which are normalized.
+\end_layout
+
+\begin_layout Standard
+The components for 
+\begin_inset Formula $u^{\mu}$
+\end_inset
+
+ and 
+\begin_inset Formula $A^{\mu}$
+\end_inset
+
+ in polar coordinates are thus:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u^{0}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u^{z}=\frac{dz}{d\sigma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u^{r}=\vec{u}\cdot\hat{r}=\cfrac{1}{\sigma}\left(-\sigma^{2}\dot{\theta}sin\left(\theta\right)cos\left(\theta\right)+\sigma^{2}\dot{\theta}sin\left(\theta\right)cos\left(\theta\right)\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u^{\theta}=\vec{u}\cdot\hat{\theta}=\left(\hat{t}-\sigma\dot{\theta}sin\left(\theta\right)\hat{x}+\sigma\dot{\theta}cos\left(\theta\right)\hat{y}\right)\cdot\cfrac{1}{r}\left(x\hat{y}-y\hat{x}\right)=\sigma\dot{\theta}\left(ysin\left(\theta\right)+cos\left(\theta\right)x\right)\cdot\cfrac{1}{\sigma}=\sigma\dot{\theta}\cfrac{1}{\sigma}\left(\sigma sin^{2}\left(\theta\right)+\sigma cos^{2}\left(\theta\right)\right)=\dot{\theta}\sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+A^{r}=\vec{A}\cdot\hat{r}=\cfrac{xA^{x}+yA^{y}}{\sigma}=cos\left(\theta\right)A^{x}+sin\left(\theta\right)A^{y}\\
+A^{\theta}=\vec{A}\cdot\hat{\theta}=\cfrac{-yA^{x}+xA^{y}}{\sigma}=-sin\left(\theta\right)A^{x}+cos\left(\theta\right)A^{y}
+\end{cases}$
+\end_inset
+
+ 
+\begin_inset Formula $\begin{cases}
+A^{x}=cos\left(\theta\right)A^{r}-sin\left(\theta\right)A^{\theta}\\
+A^{y}=sin\left(\theta\right)A^{r}+cos\left(\theta\right)A^{\theta}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Computing the product-sum 
+\begin_inset Formula $u^{\mu}A_{\mu}$
+\end_inset
+
+ starting from minkowski metric:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u^{\mu}A_{\mu}=u^{t}A^{t}-u^{x}A^{x}-u^{y}A^{y}-u^{z}A^{z}=A^{t}+\sigma\dot{\theta}sin\left(\theta\right)\left(cos\left(\theta\right)A^{r}-sin\left(\theta\right)A^{\theta}\right)-\sigma\dot{\theta}cos\left(\theta\right)\left(sin\left(\theta\right)A^{r}+cos\left(\theta\right)A^{\theta}\right)-\frac{dz}{d\sigma}A^{z}=A^{t}-\sigma\dot{\theta}A^{\theta}-\frac{dz}{d\sigma}A^{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The action becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=-T\iint_{(0,-l_{2})}^{(t,l_{1})}d\sigma dt\sqrt{1+r^{2}\theta'^{2}-r^{2}\dot{\theta}^{2}+z'^{2}-\dot{z}^{2}-r^{2}\left(\dot{\theta}z'-\theta'\dot{z}\right)^{2}}-m\int dt\sqrt{1-r^{2}\dot{\theta}^{2}-\dot{z}^{2}}|_{\sigma=-l_{2}}^{\sigma=l_{1}}-q\int_{0}^{t}\left(A^{t}-\sigma\dot{\theta}A^{\theta}-z'A^{z}\right)d\tau|_{\sigma=-l_{2}}^{\sigma=l_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+quadratic approximation*****
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=-TL\int_{0}^{t}dt-T\iint_{(0,-l_{2})}^{(T,l_{1})}d\sigma dt\frac{1}{2}\left[r^{2}\theta'^{2}-r^{2}\dot{\theta}^{2}+z'^{2}-\dot{z}^{2}\right]-m\delta t+\frac{1}{2}m\int dt\left[r^{2}\dot{\theta}^{2}+\dot{z}^{2}\right]|_{\sigma=-l_{2}}^{\sigma=l_{1}}-q\int_{0}^{T}\left(A^{t}-\sigma\dot{\theta}A^{\theta}-z'A^{z}\right)d\tau|_{\sigma=-l_{2}}^{\sigma=l_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+equations of motion are then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=-T\iint_{(0,-l_{2})}^{(T,l_{1})}d^{2}\sigma\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}-m\int_{0}^{T}d\tau\sqrt{u^{\mu}u_{\mu}}|_{\sigma=-l_{2}}^{\sigma=l_{1}}-q\int_{0}^{T}u^{\mu}A_{\mu}d\tau|_{\sigma=-l_{2}}^{\sigma=l_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x''-\ddot{x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-2\theta'sin\theta-r\theta''sin\theta-r\left(\theta'\right)^{2}cos\theta+r\left(\dot{\theta}\right)^{2}cos\theta+r\ddot{\theta}sin\theta=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r\theta''cos\theta-r\left(\theta'\right)^{2}sin\theta-r\ddot{\theta}cos\theta+r\left(\dot{\theta}\right)^{2}sin\theta=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\frac{\partial\mathcal{L}}{\partial\theta}-\partial_{\alpha}\left(\frac{\partial\mathcal{L}}{\partial(\partial_{\alpha}\theta)}\right)=0 & \Rightarrow\partial_{r}\left(\frac{\partial\mathcal{L}}{\partial\theta'}\right)+\partial_{t}\left(\frac{\partial\mathcal{L}}{\partial\dot{\theta}}\right)=\partial_{r}\left(r^{2}\theta'\right)-r^{2}\ddot{\theta}=0\\
+\frac{\partial\mathcal{L}}{\partial z}-\partial_{\alpha}\left(\frac{\partial\mathcal{L}}{\partial(\partial_{\alpha}z)}\right)=0 & \Rightarrow\partial_{r}\left(\frac{\partial\mathcal{L}}{\partial z'}\right)+\partial_{t}\left(\frac{\partial\mathcal{L}}{\partial\dot{z}}\right)=z''-\ddot{z}=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I split the functions describing the string into two halves describing the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+left
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+right
+\begin_inset Quotes erd
+\end_inset
+
+ halves.
+ This is needed because 
+\begin_inset Formula $r>0$
+\end_inset
+
+ while the string need not be completely symmetric around the center (and
+ may also have two different 
+\begin_inset Quotes eld
+\end_inset
+
+lengths
+\begin_inset Quotes erd
+\end_inset
+
+ from the center to the edges).
+\end_layout
+
+\begin_layout Standard
+In doing so I add continuity conditions around the center:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+z^{L}\left(0,t\right)=z^{R}\left(0,t\right) & \partial_{t,r}z^{L}\left(0,t\right)=\partial_{t,r}z^{R}\left(0,t\right)\\
+\theta^{L}\left(0,t\right)=\theta^{R}\left(0,t\right)=0 & \partial_{t,r}\theta^{L}\left(0,t\right)=\partial_{t,r}\theta^{R}\left(0,t\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z^{L}\left(r,t\right)=\sum e^{i\omega_{n}t}\frac{z_{n}^{L}\left(r\right)}{\omega_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z^{R}\left(r,t\right)=\sum e^{i\omega_{n}t}\frac{z_{n}^{R}\left(r\right)}{\omega_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta^{L}\left(r,t\right)=\sum e^{i\omega_{n}t}\frac{\theta_{n}^{L}\left(r\right)}{\omega_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta^{R}\left(r,t\right)=\sum e^{i\omega_{n}t}\frac{\theta_{n}^{R}\left(r\right)}{\omega_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The boundary equations are derived to be:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial L}{\partial x^{\mu}}-\partial_{\tau}\left(\frac{\partial L}{\partial(\partial_{\tau}x^{\mu})}\right)+\frac{\partial\mathcal{L}}{\partial(\partial_{\sigma}x^{\mu})}|_{\sigma=-l_{2}}^{\sigma=l_{1}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\frac{\partial L}{\partial\theta}-\partial_{t}\left(\frac{\partial L}{\partial\dot{\theta}}\right)\pm\frac{\partial\mathcal{L}}{\partial\theta'}|_{\sigma=-l_{R}}^{\sigma=l_{L}}=0 & \Rightarrow-mr^{2}\ddot{\theta}\pm Tr^{2}\theta'=0\\
+\frac{\partial L}{\partial z}-\partial_{\tau}\left(\frac{\partial L}{\partial\dot{z}}\right)\pm\frac{\partial\mathcal{L}}{\partial z'}|_{\sigma=-l_{R}}^{\sigma=l_{L}}=0 & \Rightarrow-m\ddot{z}\pm Tz'=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And after the split into two halves they are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+m_{R}r^{2}\ddot{\theta}^{L}+Tr^{2}\theta^{L}'=0 & m_{R}r^{2}\ddot{\theta}^{R}-Tr^{2}\theta^{R}'=0\\
+m_{L}\ddot{z}^{L}+Tz'^{L}=0 & m_{R}\ddot{z}^{R}-Tz'^{R}=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z^{L}\left(r,t\right)=\sum e^{i\omega_{n}t}\frac{1}{\omega_{n}}\left(A_{n}^{L}cos\left(\omega_{n}r\right)+B_{n}^{L}sin\left(\omega_{n}r\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z^{R}\left(r,t\right)=\sum e^{i\omega_{n}t}\frac{1}{\omega_{n}}\left(A_{n}^{R}cos\left(\omega_{n}r\right)+B_{n}^{R}sin\left(\omega_{n}r\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the continuity conditions we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+A_{n}^{L}=A_{n}^{R}\\
+B_{n}^{L}=B_{n}^{R}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we really only have one function 
+\begin_inset Formula 
+\[
+z^{L}\left(r,t\right)=\sum e^{i\omega_{n}t}\frac{1}{\omega_{n}}\left(A_{n}cos\left(\omega_{n}r\right)+B_{n}sin\left(\omega_{n}r\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula $-l_{R}<r<l_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Putting this into the corresponding endpoint equation we get 
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\begin{cases}
+m_{L}\ddot{z}^{L}+Tz'^{L}=0 & \Rightarrow B_{n}\left(cos\left(\omega_{n}l_{L}\right)-\frac{m_{L}\omega_{n}}{T}sin\left(\omega_{n}l_{L}\right)\right)=A_{n}\left(\frac{m_{L}\omega_{n}}{T}cos\left(\omega_{n}l_{L}\right)+sin\left(\omega_{n}l_{L}\right)\right)\\
+m_{R}\ddot{z}^{R}-Tz'^{R}=0 & \Rightarrow B_{n}\left(cos\left(\omega_{n}l_{R}\right)-\frac{m_{R}\omega_{n}}{T}sin\left(\omega_{n}l_{R}\right)\right)=A_{n}\left(-sin\left(\omega_{n}l_{R}\right)-\frac{m_{R}\omega_{n}}{T}cos\left(\omega_{n}l_{R}\right)\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\begin{cases}
+ & A_{n}\left(\frac{m_{L}\omega_{n}}{T}cos\left(\omega_{n}l_{L}\right)+sin\left(\omega_{n}l_{L}\right)\right)+B_{n}\left(\frac{m_{L}\omega_{n}}{T}sin\left(\omega_{n}l_{L}\right)-cos\left(\omega_{n}l_{L}\right)\right)=0\\
+ & A_{n}\left(-sin\left(\omega_{n}l_{R}\right)-\frac{m_{R}\omega_{n}}{T}cos\left(\omega_{n}l_{R}\right)\right)+B_{n}\left(\frac{m_{R}\omega_{n}}{T}sin\left(\omega_{n}l_{R}\right)-cos\left(\omega_{n}l_{R}\right)\right)=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can represent the previous equations by the linear system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{n}\vec{X_{n}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\begin{array}{c}
+A_{n}\\
+B_{n}
+\end{array}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{n}=\left(\begin{array}{cc}
+\frac{m_{L}\omega_{n}}{T}cos\left(\omega_{n}l_{L}\right)+sin\left(\omega_{n}l_{L}\right) & \frac{m_{L}\omega_{n}}{T}sin\left(\omega_{n}l_{L}\right)-cos\left(\omega_{n}l_{L}\right)\\
+-sin\left(\omega_{n}l_{R}\right)-\frac{m_{R}\omega_{n}}{T}cos\left(\omega_{n}l_{R}\right) & \frac{m_{R}\omega_{n}}{T}sin\left(\omega_{n}l_{R}\right)-cos\left(\omega_{n}l_{R}\right)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And because we want a nontrivial solution for 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ we require 
+\begin_inset Formula $det\left(C_{n}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+det\left(C_{n}\right)=\frac{sin\left(\omega_{n}\left(l_{L}+l_{R}\right)\right)\left(m_{L}m_{R}\omega_{n}^{2}-T^{2}\right)-T\omega_{n}\left(m_{L}+m_{R}\right)cos\left(\omega_{n}\left(l_{L}-l_{R}\right)\right)}{T^{2}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+tan\left(\omega_{n}\left(l_{L}+l_{R}\right)\right)=\frac{T\omega_{n}\left(m_{L}+m_{R}\right)}{m_{L}m_{R}\omega_{n}^{2}-T^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From which we know
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $B_{n}=A_{n}\frac{\frac{m_{L}\omega_{n}}{T}cos\left(\omega_{n}l_{L}\right)+sin\left(\omega_{n}l_{L}\right)}{cos\left(\omega_{n}l_{L}\right)-\frac{m_{L}\omega_{n}}{T}sin\left(\omega_{n}l_{L}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z^{L}\left(r,t\right)=\sum e^{i\omega_{n}t}\frac{1}{\omega_{n}}A_{n}\left(cos\left(\omega_{n}r\right)+\frac{\frac{m_{L}\omega_{n}}{T}cos\left(\omega_{n}l_{L}\right)+sin\left(\omega_{n}l_{L}\right)}{cos\left(\omega_{n}l_{L}\right)-\frac{m_{L}\omega_{n}}{T}sin\left(\omega_{n}l_{L}\right)}sin\left(\omega_{n}r\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solutions for the angle are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta^{L}\left(r,t\right)=\sum e^{i\omega_{n}t}\frac{2C_{n}^{L}\omega_{n}e^{-r\omega_{n}}+D_{n}^{L}e^{r\omega_{n}}}{2r\omega_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta^{R}\left(r,t\right)=\sum e^{i\omega_{n}t}\frac{2C_{n}^{R}\omega_{n}e^{-r\omega_{n}}+D_{n}^{R}e^{r\omega_{n}}}{2r\omega_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the continuity conditions we again get that the two sides are identified.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+lim_{\rightarrow0}r\theta^{L}\left(0,t\right)=lim_{\rightarrow0}r\theta^{R}\left(0,t\right)=0 & lim_{\rightarrow0}\partial_{r}r\theta^{L}\left(0,t\right)=lim_{\rightarrow0}\partial_{r}r\theta^{R}\left(0,t\right)\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+2\omega_{n}C_{n}^{L}+D_{n}^{L}=2\omega_{n}C_{n}^{R}+D_{n}^{R} & \Rightarrow D_{n}^{L}=D_{n}^{R}\\
+-2\omega_{n}C_{n}^{L}+D_{n}^{L}=-2\omega_{n}C_{n}^{R}+D_{n}^{R} & \Rightarrow C_{n}^{L}=C_{n}^{R}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta\left(r,t\right)=\sum e^{i\omega_{n}t}\frac{2C_{n}\omega_{n}e^{-r\omega_{n}}+D_{n}e^{r\omega_{n}}}{2\omega_{n}r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the endpoint equations we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{n}\left(m_{R}l_{R}+m_{L}l_{L}+\frac{T}{\omega_{n}^{2}}+\frac{1}{T}\left(m_{L}m_{R}\omega_{n}^{2}+T^{2}\right)l_{L}l_{R}\right)tanh\left(\omega_{n}\left(l_{L}+l_{R}\right)\right)=T\left(l_{R}+l_{L}\right)+l_{L}l_{R}\omega_{n}^{2}\left(m_{L}+m_{R}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Electromagnetic Fields
+\end_layout
+
+\begin_layout Standard
+The Lienard-Wichert formulas for the fields of a point charge are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(\vec{x},t\right)=\left[\cfrac{e}{\left(1-\vec{\beta}\cdot\vec{n}\right)R}\right]_{ret}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{A}\left(\vec{x},t\right)=\left[\cfrac{e\vec{\beta}}{\left(1-\vec{\beta}\cdot\vec{n}\right)R}\right]_{ret}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{E}\left(\vec{x},t\right)=\left[e\cfrac{\vec{n}-\vec{\beta}}{\gamma^{2}\left(1-\vec{\beta}\cdot\vec{n}\right)^{3}R^{2}}+\cfrac{e}{c}\cfrac{\vec{n}\times\left\{ \left(\vec{n}-\vec{\beta}\right)\times\dot{\vec{\beta}}\right\} }{\left(1-\vec{\beta}\cdot\vec{n}\right)^{3}R}\right]_{ret}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{B}\left(\vec{x},t\right)=\left[\vec{n}\times\vec{E}\right]_{ret}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{\beta}$
+\end_inset
+
+ is the velocity of the point charge source, divided by 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma=\left(1-\beta^{2}\right)^{-1/2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+ is the unit vector from the source to the point where we evaluate the fields.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R$
+\end_inset
+
+ is the distance from the source to the point where we evaluate the fields.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e$
+\end_inset
+
+ is the charge of the source.
+\end_layout
+
+\begin_layout Standard
+The formulas are evaluated with the retardation condition (also called the
+ light cone condition) 
+\begin_inset Formula $t-t_{ret}=R_{ret}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $R_{ret}$
+\end_inset
+
+ denotes the distance from the source 
+\bar under
+at retarded time
+\bar default
+ to the point where we evaluate the fields.
+\end_layout
+
+\begin_layout Standard
+The calculation of the various fields is then reduced to a geometric calculation
+ where everything will depend on the length of the string and the rate of
+ rotation.
+\end_layout
+
+\begin_layout Standard
+Diagram (**) displays the geometry of the spinning string, with retarded
+ positions.
+\end_layout
+
+\begin_layout Standard
+The origin of the coordinate system is at the center of the circle.
+\end_layout
+
+\begin_layout Standard
+P' is the location of particle P in retarted time (t<x0)
+\end_layout
+
+\begin_layout Standard
+Q is the observation point (other particle)
+\end_layout
+
+\begin_layout Standard
+From this geometry (the cosine law) and the retardation condition 
+\begin_inset Formula $\left|P'Q\right|=\tau=\cfrac{\Delta\phi}{\omega}$
+\end_inset
+
+ we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta\phi^{2}=\beta_{1}^{2}+\beta_{2}^{2}+2\beta_{1}\beta_{2}cos\left(\Delta\phi\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This condition relates the 
+\begin_inset Quotes eld
+\end_inset
+
+retardation angle
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\Delta\phi$
+\end_inset
+
+ and the velocities of the string end points.
+ This equation is solved numerically, giving implicitly the function 
+\begin_inset Formula $\Delta\phi=f\left(\beta_{1}\right)$
+\end_inset
+
+, or it can be solved approximately by guessing (for the case 
+\begin_inset Formula $\beta_{1}\rightarrow0$
+\end_inset
+
+) 
+\begin_inset Formula $\Delta\phi=a_{0}\beta_{1}+a_{1}\beta_{1}^{2}+...$
+\end_inset
+
+ and solving for the coefficients iterativley.
+\end_layout
+
+\begin_layout Standard
+The electromagnetic fields and potentials are calculated to be:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A^{0}\left(l_{1}\right)=\frac{q\omega}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A^{\theta}\left(l_{1}\right)=-\frac{\beta_{2}q\omega\cos(\Delta\theta)}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{E}=\left\{ \begin{array}{c}
+-\frac{q\omega^{2}\left(\beta_{1}\left(\beta_{2}^{2}\cos(2\Delta\theta)+\beta_{2}^{2}-2\right)+2\beta_{2}\cos(\Delta\theta)\left(\beta_{2}^{2}-1\right)-2\Delta\theta\beta_{2}\sin(\Delta\theta)\right)}{2\left(\Delta\theta+\beta_{1}\beta_{2}\sin(\Delta\theta)\right)^{3}}\\
+\frac{q\beta_{2}\omega^{2}\left(\sin(\Delta\theta)\left(\beta_{1}^{2}+\beta_{2}^{2}+\beta_{1}\beta_{2}\cos(\Delta\theta)-1\right)+\Delta\theta\left(\cos(\Delta\theta)+\beta_{1}\beta_{2}\right)\right)}{\left(\Delta\theta+\beta_{1}\beta_{2}\sin(\Delta\theta)\right)^{3}}\\
+0
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\[
+\vec{B}=\left\{ \begin{array}{c}
+0\\
+0\\
+\frac{q\beta_{2}\omega^{2}\left(\Delta\theta\left(\beta_{1}^{2}\beta_{2}+\beta_{1}\cos(\Delta\theta)\left(\beta_{2}^{2}+1\right)+\beta_{2}\right)+\beta_{1}\sin(\Delta\theta)\left(\beta_{1}^{2}+2\beta_{1}\beta_{2}\cos(\Delta\theta)+\beta_{2}^{2}\right)\right)}{\Delta\theta\left(\Delta\theta+\beta_{1}\beta_{2}\sin(\Delta\theta)\right)^{3}}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Equations of Motion
+\end_layout
+
+\begin_layout Subsection
+combining fields and point particles
+\end_layout
+
+\begin_layout Standard
+In combining point particle lagrangians and field lagrangian densities,
+ we obtain slightly non standard euler lagrange equations.
+ The action is the sum:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\int\mathcal{L}d^{2}\sigma+\int Ld\tau
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ is specifically the lagrangian density and 
+\begin_inset Formula $L$
+\end_inset
+
+ is a lagrangian.
+\end_layout
+
+\begin_layout Standard
+We obtain the equations of motion by varying the solution by an infinitesimal
+ function 
+\begin_inset Formula $\delta x^{\mu}(\sigma,\tau)$
+\end_inset
+
+ such that 
+\begin_inset Formula $\delta x^{\mu}(0)=\delta x^{\mu}(T)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta S=\int\left(\frac{\partial\mathcal{L}}{\partial x^{\mu}}\delta x^{\mu}+\frac{\partial\mathcal{L}}{\partial(\partial_{\alpha}x^{\mu})}\partial_{\alpha}\delta x^{\mu}\right)d^{2}\sigma+\int\left(\frac{\partial L}{\partial x^{\mu}}\delta x^{\mu}+\frac{\partial L}{\partial(\partial_{\tau}x^{\mu})}\partial_{\tau}\delta x^{\mu}\right)d\tau=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\int\left(\frac{\partial\mathcal{L}}{\partial x^{\mu}}-\partial_{\alpha}\left(\frac{\partial\mathcal{L}}{\partial(\partial_{\alpha}x^{\mu})}\right)\right)\delta x^{\mu}d^{2}\sigma+\int\left(\frac{\partial L}{\partial x^{\mu}}-\partial_{\tau}\left(\frac{\partial L}{\partial(\partial_{\tau}x^{\mu})}\right)+\frac{\partial\mathcal{L}}{\partial(\partial_{\sigma}x^{\mu})}\right)|_{\sigma=-l_{2}}^{\sigma=l_{1}}\delta x^{\mu}d\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So requiring no variation to first order in the action gives us the euler
+ lagrange equations of motion for the field:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial\mathcal{L}}{\partial x^{\mu}}-\partial_{\alpha}\left(\frac{\partial\mathcal{L}}{\partial(\partial_{\alpha}x^{\mu})}\right)=0
+\]
+
+\end_inset
+
+ and at each end point the Neumann boundary condition 
+\begin_inset Formula 
+\[
+\frac{\partial L}{\partial x^{\mu}}-\partial_{\tau}\left(\frac{\partial L}{\partial(\partial_{\tau}x^{\mu})}\right)+\frac{\partial\mathcal{L}}{\partial(\partial_{\sigma}x^{\mu})}|_{\sigma=-l_{2}}^{\sigma=l_{1}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or at 
+\begin_inset Formula $\mu\neq0$
+\end_inset
+
+ the Dirichlet boundary condition:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\delta x^{\mu}=0
+\]
+
+\end_inset
+
+We will use the first (Neumann) boundary condition, as the string endpoints
+ are free to move.
+\end_layout
+
+\begin_layout Subsection
+Masses equation
+\end_layout
+
+\begin_layout Standard
+We turn to the boundary equations and write it explicitly and get a forces
+ equation for the end points.
+\end_layout
+
+\begin_layout Standard
+The derivatives:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial L}{\partial x^{\mu}}=-q_{1}u^{\nu}\cfrac{\partial A_{\nu}\left(l_{1}\right)}{\partial x^{\mu}}-q_{2}u^{\nu}\cfrac{\partial A_{\nu}\left(l_{2}\right)}{\partial x^{\mu}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\partial_{\tau}\frac{\partial L}{\partial(\partial_{\tau}x^{\mu})}=-m_{1}\partial_{\tau}\left(\cfrac{u_{\mu}}{\sqrt{u^{\nu}u_{\nu}}}\right)-m_{2}\partial_{\tau}\left(\cfrac{u_{\mu}}{\sqrt{u^{\nu}u_{\nu}}}\right)-q_{1}u^{\nu}\cfrac{\partial A_{\mu}\left(l_{1}\right)}{\partial x^{\nu}}-q_{2}u^{\nu}\cfrac{\partial A_{\mu}\left(l_{2}\right)}{\partial x^{\nu}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\frac{\partial\mathcal{L}}{\partial(\partial_{\sigma}x^{\mu})}|^{\sigma=l_{1}}=\frac{\partial\mathcal{L}}{\partial V^{\mu}}|^{\sigma=l_{1}}=-T\cfrac{\left(u\cdot V\right)u_{\mu}-u^{2}V_{\mu}}{\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}}|^{\sigma=l_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The equation now becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-q_{1}u^{\nu}\cfrac{\partial A_{\nu}\left(l_{1}\right)}{\partial x^{\mu}}-q_{2}u^{\nu}\cfrac{\partial A_{\nu}\left(l_{2}\right)}{\partial x^{\mu}}-\left[-m_{1}\partial_{\tau}\left(\cfrac{u_{\mu}}{\sqrt{u^{\nu}u_{\nu}}}\right)-m_{2}\partial_{\tau}\left(\cfrac{u_{\mu}}{\sqrt{u^{\nu}u_{\nu}}}\right)-q_{1}u^{\nu}\cfrac{\partial A_{\mu}\left(l_{1}\right)}{\partial x^{\nu}}-q_{2}u^{\nu}\cfrac{\partial A_{\mu}\left(l_{2}\right)}{\partial x^{\nu}}\right]+
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-T\cfrac{\left(u\cdot V\right)u_{\mu}-u^{2}V_{\mu}}{\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which can be written in terms of the electromagnetic fields as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{1}\partial_{\tau}\left(\cfrac{u_{\mu}}{\sqrt{u^{\nu}u_{\nu}}}\right)+m_{2}\partial_{\tau}\left(\cfrac{u_{\mu}}{\sqrt{u^{\nu}u_{\nu}}}\right)+q_{1}u^{\nu}F_{\nu\mu}\left(l_{1}\right)-q_{2}u^{\nu}F_{\mu\nu}\left(l_{2}\right)-T\cfrac{\left(u\cdot V\right)u_{\mu}-u^{2}V_{\mu}}{\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}}|^{\sigma=l_{1}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inserting the spinning string solution and Specializing to 
+\begin_inset Formula $\mu=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=\left(\tau,\sigma cos\left(\omega\tau\right),\sigma sin\left(\omega\tau\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u=\left(1,-\omega\sigma sin\left(\omega\tau\right),\omega\sigma cos\left(\omega\tau\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=\left(0,cos\left(\omega\tau\right),sin\left(\omega\tau\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r=\left(\tau,\sigma cos\left(\omega\tau+\pi\right),\sigma sin\left(\omega\tau+\pi\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{r}=\left(1,-\omega\sigma sin\left(\omega\tau+\pi\right),\omega\sigma cos\left(\omega\tau+\pi\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{r}=\left(0,cos\left(\omega\tau+\pi\right),sin\left(\omega\tau+\pi\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where we denoted retarded quantities with index 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We now get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-m_{1}\cfrac{-\omega^{2}\sigma cos\left(\omega\tau\right)}{\sqrt{1-\omega^{2}\sigma^{2}}}+q_{1}\omega\sigma cos\left(\omega\tau\right)B_{3}\left(\sigma\right)+q_{1}E_{1}\left(\sigma\right)-T\sqrt{1-\omega^{2}\sigma^{2}}cos\left(\omega\tau\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which at an endpoint is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{1}\cfrac{\omega^{2}l_{1}cos\left(\omega\tau\right)}{\sqrt{1-\omega^{2}l_{1}^{2}}}+q_{1}\omega l_{1}cos\left(\omega\tau\right)B_{3}\left(l_{1}\right)+q_{1}E_{1}\left(l_{1}\right)-T\sqrt{1-\omega^{2}l_{1}^{2}}cos\left(\omega\tau\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We want the equation in the radial direction, so we also specialize to 
+\begin_inset Formula $\tau=0$
+\end_inset
+
+, and In terms of 
+\begin_inset Formula $\beta_{i}=\omega l_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma_{i}=\left(1-\beta_{i}^{2}\right)^{-1/2}$
+\end_inset
+
+ this is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{1}\cfrac{\omega\beta_{1}}{\sqrt{1-\beta_{1}^{2}}}+q_{1}\beta_{1}B_{3}\left(l_{1}\right)+q_{1}E_{1}\left(l_{1}\right)-T\sqrt{1-\beta_{1}^{2}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can see a string tension term, a centrifugal term and an electromagnetic
+ term.
+\end_layout
+
+\begin_layout Standard
+This equation constitutes a constraint implicitly giving 
+\begin_inset Formula $\omega=\omega\left(\beta_{1},\beta_{2},m_{1},m_{2},q_{1},q_{2},T\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Using the fact that 
+\begin_inset Formula $T,q^{2},\omega$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta\phi$
+\end_inset
+
+ are the same for both end points, the force equations for the two end points
+ also provide a relation between 
+\begin_inset Formula $\left\{ m_{1},m_{2},\beta_{1},\beta_{2}\right\} $
+\end_inset
+
+.
+ In the case of 
+\begin_inset Formula $q^{2}=0$
+\end_inset
+
+ it is just:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma_{1}^{2}\beta_{1}m_{1}\omega=T=\gamma_{2}^{2}\beta_{2}m_{2}\omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma_{1}^{2}\beta_{1}m_{1}=\gamma_{2}^{2}\beta_{2}m_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which can be argued to be approximately true (and much simpler) as long
+ as 
+\begin_inset Formula $F_{tension}\approx F_{centrifugal}$
+\end_inset
+
+.
+ This turns out to be true for hadrons (?) as long as the state has nonzero
+ angular momentum.
+ In the case of zero angular momentum we get the trivial solution 
+\begin_inset Formula $\beta_{1}=\beta_{2}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+String equations
+\end_layout
+
+\begin_layout Standard
+We wish to verify that the spinning string ansatz is truly a solution to
+ the equations of motion.
+\end_layout
+
+\begin_layout Standard
+The derivatives are:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\frac{\partial\mathcal{L}}{\partial(\partial_{\tau}x^{\mu})}=\frac{\partial\mathcal{L}}{\partial u^{\mu}}=-T\cfrac{V_{\mu}\left(u\cdot V\right)-u_{\mu}V^{2}}{\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\frac{\partial\mathcal{L}}{\partial(\partial_{\sigma}x^{\mu})}=\frac{\partial\mathcal{L}}{\partial V^{\mu}}=-T\cfrac{u_{\mu}\left(u\cdot V\right)-u^{2}V_{\mu}}{\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which give the equationf of motion:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial\mathcal{L}}{\partial x^{\mu}}-\partial_{\alpha}\left(\frac{\partial\mathcal{L}}{\partial(\partial_{\alpha}x^{\mu})}\right)=-\partial_{\tau}\left(\frac{\partial\mathcal{L}}{\partial u^{\mu}}\right)-\partial_{\sigma}\left(\frac{\partial\mathcal{L}}{\partial V^{\mu}}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-\partial_{\tau}\left(-T\cfrac{V_{\mu}\left(u\cdot V\right)-u_{\mu}V^{2}}{\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}}\right)-\partial_{\sigma}\left(-T\cfrac{u_{\mu}\left(u\cdot V\right)-u^{2}V_{\mu}}{\sqrt{\left(u\cdot V\right)^{2}-u^{2}V^{2}}}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Putting in the spinning string solution we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{-\partial_{\tau}u_{\mu}}{\sqrt{1-\omega^{2}\sigma^{2}}}+\cfrac{-\omega^{2}\sigma}{\sqrt{1-\omega^{2}\sigma^{2}}}V_{\mu}+\sqrt{1-\omega^{2}\sigma^{2}}\partial_{\sigma}V_{\mu}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-\partial_{\tau}u_{\mu}-\omega^{2}\sigma V_{\mu}+\left(1-\omega^{2}\sigma^{2}\right)\partial_{\sigma}V_{\mu}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Specializing to the time component it is trivially true 
+\begin_inset Formula $\left(V_{0}=\partial_{\tau}u_{0}=0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Specializing to the spatial component 
+\begin_inset Formula $\mu=1$
+\end_inset
+
+ we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-\omega^{2}\sigma cos\left(\omega\tau\right)+\omega^{2}\sigma cos\left(\omega\tau\right)-\left(1-\omega^{2}\sigma^{2}\right)\partial_{\sigma}cos\left(\omega\tau\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Energy
+\end_layout
+
+\begin_layout Standard
+Calculating the energy can be done in two ways.
+ Either as the generator of poincare time translations, or as the hamiltonian
+ of the gauge fixed system.
+ We show the second choice here:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\int d\sigma\left(\cfrac{\partial\mathcal{L}}{\partial\dot{\theta}}\dot{\theta}-\mathcal{L}\right)+\cfrac{\partial L}{\partial\dot{\theta}}\dot{\theta}-L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=T\int_{-l_{2}}^{l_{1}}d\sigma\cfrac{1+\sigma^{2}\theta'^{2}}{\sqrt{1+\sigma^{2}\left(\theta'^{2}-\dot{\theta}^{2}\right)}}+m\cfrac{1}{\sqrt{1-\sigma^{2}\dot{\theta}^{2}}}|_{\sigma=-l_{2}}^{\sigma=l_{1}}+q_{1}A^{t}\left(l_{1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice in the electromagnetic part we took just one contribution out of
+ the two end points.
+ This is because it already contains the coloumb interaction energy, and
+ taking both 
+\begin_inset Quotes eld
+\end_inset
+
+contibutions
+\begin_inset Quotes erd
+\end_inset
+
+ would be wrong.
+\end_layout
+
+\begin_layout Standard
+Inserting the spinning string solution and potential we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=T\int_{-l_{2}}^{l_{1}}d\sigma\cfrac{1}{\sqrt{1-\omega^{2}\sigma^{2}}}+m\cfrac{1}{\sqrt{1-\sigma^{2}\omega^{2}}}|_{-l_{2}}^{l_{1}}+\frac{q_{1}q_{2}\omega}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=T\frac{sin^{-1}(\beta_{1})}{\omega}+T\frac{sin^{-1}\left(\beta_{2}\right)}{\omega}+\cfrac{m_{1}}{\sqrt{1-\beta_{1}^{2}}}+\cfrac{m_{2}}{\sqrt{1-\beta_{2}^{2}}}+\frac{q_{1}q_{2}\omega}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Angular momentum
+\end_layout
+
+\begin_layout Standard
+The angular momentum is obtained as the generator of rotations.
+ For the rotations in the rotation plane of the string:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=\int d\sigma\cfrac{\partial\mathcal{L}}{\partial\dot{\theta}}+\cfrac{\partial L}{\partial\dot{\theta}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=T\int_{-l_{2}}^{l_{1}}d\sigma\cfrac{\sigma^{2}\dot{\theta}}{\sqrt{1+\sigma^{2}\left(\theta'^{2}-\dot{\theta}^{2}\right)}}+m_{1}\cfrac{l_{1}^{2}\dot{\theta}}{\sqrt{1-l_{1}^{2}\dot{\theta}^{2}}}+m_{1}\cfrac{l_{2}^{2}\dot{\theta}}{\sqrt{1-l_{2}^{2}\dot{\theta}^{2}}}+q_{1}l_{1}A^{\theta}\left(l_{1}\right)+q_{2}l_{2}A^{\theta}\left(l_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inserting the spinning string solution and potential we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=T\int_{-l_{2}}^{l_{1}}d\sigma\cfrac{\sigma^{2}\omega}{\sqrt{1-\sigma^{2}\omega^{2}}}+m\cfrac{l_{1}^{2}\omega}{\sqrt{1-l_{1}^{2}\omega^{2}}}+m\cfrac{l_{2}^{2}\omega}{\sqrt{1-l_{2}^{2}\omega^{2}}}-q_{1}q_{2}\frac{\beta_{1}\beta_{2}\cos(\Delta\theta)}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}-q_{1}q_{2}\frac{\beta_{1}\beta_{2}\cos(\Delta\theta)}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=T\cfrac{-\cfrac{\beta_{1}}{\gamma_{1}}+sin^{-1}\left(\beta_{1}\right)-\cfrac{\beta_{2}}{\gamma_{2}}+sin^{-1}\left(\beta_{2}\right)}{2\omega^{2}}+m\cfrac{\gamma_{1}\beta_{1}^{2}}{\omega}+m\cfrac{\gamma_{2}\beta_{2}^{2}}{\omega}-q_{1}q_{2}\frac{2\beta_{1}\beta_{2}\cos(\Delta\theta)}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Regge Trajectories
+\end_layout
+
+\begin_layout Standard
+Plotting 
+\begin_inset Formula $\left(J,E^{2}\right)$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $\beta_{1}$
+\end_inset
+
+ gives the predicted classical Regge trajectories.
+ In order to account for the observed intercept in the Regge trajectories
+ we can add it in using four methods:
+\end_layout
+
+\begin_layout Enumerate
+Put an intercept by hand into the angular momentum: 
+\begin_inset Formula $J\rightarrow J+a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Put an intercept by hand into the energy squared: 
+\begin_inset Formula $\alpha'E^{2}\rightarrow\alpha'E^{2}-a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Introduce a constant repulsive force which induces an intercept.
+\end_layout
+
+\begin_layout Enumerate
+Introduce a casimir energy 
+\begin_inset Formula $E_{casimir}=-\frac{a-\frac{\pi}{2}S}{L}$
+\end_inset
+
+ which also induces a force and an intercept.
+\end_layout
+
+\begin_layout Standard
+Focusing on the last option, the induced force is 
+\begin_inset Formula $F_{casimir}=-\frac{d}{dL}E_{casimir}=-\frac{a-\frac{\pi}{2}S}{L^{2}}$
+\end_inset
+
+.
+ This force is attractive for 
+\begin_inset Formula $a>\frac{\pi}{2}S$
+\end_inset
+
+ and repulsive for 
+\begin_inset Formula $a<\frac{\pi}{2}S$
+\end_inset
+
+.
+ The new equations for the energy and forces are 
+\begin_inset Formula $\left(L=\frac{\beta_{1}+\beta_{2}}{\omega}\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\cfrac{T}{\omega}\left(\sin^{-1}(\beta_{1})+\sin^{-1}(\beta_{2})\right)+\gamma_{1}m_{1}+\gamma_{2}m_{2}+\frac{q_{1}q_{2}\omega}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}-\frac{\left(a-\frac{\pi}{2}S\right)\omega}{\beta_{1}+\beta_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=T\cfrac{-\cfrac{\beta_{1}}{\gamma_{1}}+sin^{-1}\left(\beta_{1}\right)-\cfrac{\beta_{2}}{\gamma_{2}}+sin^{-1}\left(\beta_{2}\right)}{2\omega^{2}}+m_{1}\cfrac{\gamma_{1}\beta_{1}^{2}}{\omega}+m_{2}\cfrac{\gamma_{2}\beta_{2}^{2}}{\omega}-2q_{1}q_{2}\beta_{1}\beta_{2}\frac{cos\left(\Delta\theta\right)}{\beta_{1}\beta_{2}sin\left(\Delta\theta\right)+\Delta\theta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\gamma_{1}\beta_{1}m_{1}\omega+\frac{\beta_{1}\beta_{2}q^{2}\omega^{2}\left(\beta_{1}\left(\beta_{1}^{2}+\beta_{2}^{2}\right)\sin(\theta)+\beta_{2}\left(\beta_{1}^{2}\theta+\beta_{1}^{2}\sin(2\theta)+\theta\right)+\beta_{1}\left(\beta_{2}^{2}+1\right)\theta\cos(\theta)\right)}{\theta(\beta_{1}\beta_{2}\sin(\theta)+\theta)^{3}}+\\
+-\frac{q^{2}\omega^{2}\left(\beta_{1}\beta_{2}^{2}\cos(2\theta)+\beta_{1}\beta_{2}^{2}-2\beta_{1}+2\left(\beta_{2}^{2}-1\right)\beta_{2}^{1}\cos(\theta)-2\beta_{2}\theta\sin(\theta)\right)}{2(\beta_{1}\beta_{2}\sin(\theta)+\theta)^{3}}-\frac{T}{\gamma_{1}}-\frac{\left(a-\frac{\pi}{2}S\right)\omega^{2}}{\left(\beta_{1}+\beta_{2}\right)^{2}}=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta\phi^{2}=\beta_{1}^{2}+\beta_{2}^{2}+2\beta_{1}\beta_{2}cos\left(\Delta\phi\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma_{1}^{2}\beta_{1}m_{1}=\gamma_{2}^{2}\beta_{2}m_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The force is radial and so does not contribute to angular momentum.
+\end_layout
+
+\begin_layout Standard
+We would like to see the behaviour of the regge trajectory, in the two following
+ limits:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\beta\rightarrow0$
+\end_inset
+
+: In this limit the quarks are slowly moving, implying most of the energy
+ is related to the string and end points and the quarks are heavy.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\beta\rightarrow1$
+\end_inset
+
+: In this limit the quarks are relativistic, implying most of the energy
+ is related to the motion and the quarks are light.
+\end_layout
+
+\begin_layout Standard
+In both cases we expand the energy and angular momentum around the limit,
+ obtaining series of either 
+\begin_inset Formula $\beta$
+\end_inset
+
+ or 
+\begin_inset Formula $\left(1-\beta\right)$
+\end_inset
+
+.
+ From the series for the energy 
+\begin_inset Formula $E=f\left(\beta\right)$
+\end_inset
+
+(or 
+\begin_inset Formula $E=f\left(1-\beta\right)$
+\end_inset
+
+) we calculate the inverse series 
+\begin_inset Formula $\beta=f^{-1}\left(E\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $1-\beta=f^{-1}\left(E\right)$
+\end_inset
+
+ and insert into the series for the angular momentum, and obtain the regge
+ trajectory 
+\begin_inset Formula $J\left(E\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The choice of naming of the parameter 
+\begin_inset Formula $S$
+\end_inset
+
+ comes from the following consideration.
+ Taking the limit 
+\begin_inset Formula $\beta\rightarrow0$
+\end_inset
+
+ we get the following energy, angular momentum and force equations (note
+ that in that limit 
+\begin_inset Formula $\beta_{1}=\beta_{2}=\frac{\omega L}{2}$
+\end_inset
+
+ where 
+\begin_inset Formula $L$
+\end_inset
+
+ is the string length):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=TL+m_{1}+m_{2}+\frac{q^{2}-\left(a-\frac{\pi}{2}S\right)}{L}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{q^{2}-\left(a-\frac{\pi}{2}S\right)}{L^{2}}=T
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Putting the two together we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=2\sqrt{T}\sqrt{q^{2}-\left(a-\frac{\pi}{2}S\right)}+m_{1}+m_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which is equivalent to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha'\left(E-m_{1}-m_{2}\right)^{2}-\frac{2}{\pi}q^{2}+\frac{2}{\pi}a=S
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By analogy to the case of mass alone the left hand side is identified with
+ the angular momentum and we are led to find that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S\equiv Spin
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Light quark limit
+\end_layout
+
+\begin_layout Standard
+In this limit the quark velocity is large, 
+\begin_inset Formula $\beta=1-\epsilon^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsilon\rightarrow0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this case the regge trajectory is
+\end_layout
+
+\begin_layout Standard
+The result when adding massive end points and no charge and casimir is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $J=1-\frac{4\sqrt{\pi}}{3}\left(\frac{1}{E}\right)^{3/2}\left(m_{1}^{3/2}+m_{2}^{3/2}\right)+\frac{1}{5}\pi^{3/2}\left(\frac{1}{E}\right)^{5/2}\left(m_{1}^{5/2}+m_{2}^{5/2}\right)+O\left(\left(\frac{1}{E}\right)^{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The result when adding casimir forces and charges is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $J=\alpha'E^{2}+O\left(\frac{1}{\sqrt{\frac{1}{E}}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Heavy quark limit
+\end_layout
+
+\begin_layout Standard
+In this limit the quark velocity is small, 
+\begin_inset Formula $\beta\rightarrow0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The equations are solved in the same manner and we get:
+\end_layout
+
+\begin_layout Standard
+mass only
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $J=\frac{4}{3}\sqrt{\frac{2}{3}}\pi\alpha'\sqrt{\frac{m_{1}m_{2}}{m_{1}+m_{2}}}(E-m_{1}-m_{2})^{3/2}+\frac{7\sqrt{\frac{2}{3}}\pi\alpha'\left(m_{1}^{2}-m_{1}m_{2}+m_{2}^{2}\right)(E-m_{1}-m_{2})^{5/2}}{27\sqrt{m_{1}m_{2}(m_{1}+m_{2})^{3}}}+O\left((E-m_{1}-m_{2})^{7/2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The result when adding casimir forces and charges is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-\frac{\sqrt{\frac{1}{6m\sqrt{T\left(q^{2}-a\right)}+aT+2q^{2}T}}\left(q^{2}\left(5\sqrt{T\left(q^{2}-a\right)}+6m\right)+a\left(\sqrt{T\left(q^{2}-a\right)}-6m\right)\right)\sqrt{2\sqrt{T\left(q^{2}-a\right)}+E-2m}}{\sqrt{6}\left(T\left(q^{2}-a\right)\right)^{1/4}}+O\left(\left(2\sqrt{T\left(q^{2}-a\right)}+E-2m\right)^{3/2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Energy Differences
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+todo-introduction - how quark mass differences are measured in QCD
+\end_layout
+
+\begin_layout Standard
+In the stationary string:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=2\sqrt{T}\sqrt{q^{2}-\left(a-\frac{\pi}{2}S\right)}+m_{1}+m_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the orbital angular momentum is 
+\begin_inset Formula $J=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The parameters 
+\begin_inset Formula $a,T$
+\end_inset
+
+ are measured from the regge trajectory fits while the spin 
+\begin_inset Formula $S$
+\end_inset
+
+ is related to the angular momentum and parity:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{meson}=\left(-1\right)^{L+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{baryon}=\left(-1\right)^{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $J=L+S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When the charge is negligible relative to the casimir contribution we can
+ approximate:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E\approx\sqrt{\frac{2}{\pi\alpha'}}\sqrt{\left(\frac{\pi}{2}S-a\right)}+\sqrt{\frac{1}{2\pi\alpha'}}\frac{q^{2}}{\sqrt{\left(\frac{\pi}{2}S-a\right)}}+m_{1}+m_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the difference between masses of hadrons which correspond to differently
+ charged versions of the same particle, for which the parameters 
+\begin_inset Formula $a,S,\alpha'$
+\end_inset
+
+ are constants:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta E\approx\sqrt{\frac{1}{2\pi\alpha'}}\frac{\Delta q^{2}}{\sqrt{\left(\frac{\pi}{2}S-a\right)}}+\Delta m_{quarks}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the mass difference of the hadrons we can infer mass differences between
+ the quarks themselves.
+ For example the proton and neutron are considered as a quark-diquark system
+ of 
+\begin_inset Formula $\left(ud-u\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(ud-d\right)$
+\end_inset
+
+ respectively, and so the end point masses are 
+\begin_inset Formula $m_{u}+m_{d}$
+\end_inset
+
+ and 
+\begin_inset Formula $2m_{d}$
+\end_inset
+
+ respectively.
+ Furthermore 
+\begin_inset Formula $q^{2}$
+\end_inset
+
+ is calculated as 
+\begin_inset Formula $q_{diquark}q_{quark}$
+\end_inset
+
+ so that 
+\begin_inset Formula $q_{proton}^{2}=\left(\frac{2}{3}-\frac{1}{3}\right)\frac{2}{3}=\frac{2}{9}$
+\end_inset
+
+ , 
+\begin_inset Formula $q_{neutron}^{2}=-\left(\frac{2}{3}-\frac{1}{3}\right)\frac{1}{3}=-\frac{1}{9}$
+\end_inset
+
+.
+ If the hadron is a superposition of electromagnetic states (i.e.
+ 
+\begin_inset Formula $\frac{1}{\sqrt{2}}\left(\left|u\bar{u}\right\rangle \pm\left|d\bar{d}\right\rangle \right)$
+\end_inset
+
+ ) then 
+\begin_inset Formula $q^{2}$
+\end_inset
+
+ is calculated as the average 
+\begin_inset Formula $q^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M_{neutron}-M_{proton}=2m_{d}-m_{d}-m_{u}+\sqrt{\frac{1}{2\pi\alpha'}}\frac{\left(-\frac{3}{9}\right)}{\sqrt{\left(\frac{\pi}{2}S-a\right)}}=m_{d}-m_{u}-\frac{3}{9}\sqrt{\frac{1}{2\pi\alpha'}}\frac{1}{\sqrt{\left(\frac{\pi}{2}S-a\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Reversing the argument, the difference in the quark masses can be calculated
+ from the hadron mass differences and the fit to the regge trajectory:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{d}-m_{u}=M_{neutron}-M_{proton}+\frac{3}{9}\sqrt{\frac{1}{2\pi\alpha'}}\frac{1}{\sqrt{\left(\frac{\pi}{2}S-a\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the following section we present the calculation of the 
+\begin_inset Formula $u/d$
+\end_inset
+
+ mass difference for several different hadrons using the parameters consistent
+ with the regge fits, and analyse the results.
+\end_layout
+
+\begin_layout Part
+Confronting with PDG Data
+\end_layout
+
+\begin_layout Section
+Regge Trajectories
+\end_layout
+
+\begin_layout Standard
+Using the methods outlined in the previous section, we fit the regge trajectorie
+s of our model to PDG data for the hadrons.
+ Specifically we assume 
+\begin_inset Formula $m_{1}=m_{2}$
+\end_inset
+
+ , without loss of generality as can be seen from equation ** and the fits
+ done in [dorin] which show this behaviour in general.
+ Also we take 
+\begin_inset Formula $\alpha_{e}=\cfrac{1}{137}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Plotting against J vs.
+ Plotting against L
+\end_layout
+
+\begin_layout Standard
+In previous work [dorin] the model with no electric charge was confronted
+ with PDG data.
+ There the intercept was using method 1 discussed in section **.
+ When the fits were done, there was no way of distinguishing between fits
+ to the total angular momentum 
+\begin_inset Formula $J$
+\end_inset
+
+ of a hadron, and fits to the orbital angular momentum 
+\begin_inset Formula $L$
+\end_inset
+
+, of the same hadron, as the intercept could always be adjusted to give
+ either plot.
+ However when putting in the intercept using a casimir energy prescription
+ we obtain fundementaly different results for the two fits.
+ We find that we cannot fit the model to the total angular momentum 
+\begin_inset Formula $J$
+\end_inset
+
+ of the hadron.
+ An example for the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ meson can be seen in figure **.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+Fit to 
+\begin_inset Formula $\left(J,E^{2}\right)$
+\end_inset
+
+ for the 
+\begin_inset Formula $\rho$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/Jtrajectory.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Blue dots - model, red dots - data, green line - linear fit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the next sections, all the fits will be done for 
+\begin_inset Formula $\left(L,E^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Fit Plots
+\end_layout
+
+\begin_layout Standard
+In the following, we will present the goodness of the fit in the parameter
+ space, and determine values for the universal string tension and end point
+ masses for various hadrons.
+ The fits were done in Mathematica 10 (see code in the appendix) using numerical
+ methods.
+ The goodness of fit is measured in terms of the function
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\chi^{2}=\sum_{i\in trajectory}\cfrac{M_{i,model}^{2}-M_{i,pdg}^{2}}{M_{i,pdg}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Meson Fits
+\end_layout
+
+\begin_layout Subsubsection
+Baryon Fits
+\end_layout
+
+\begin_layout Subsection
+Summary tables
+\end_layout
+
+\begin_layout Subsection
+Comparison with purely massive fits
+\end_layout
+
+\begin_layout Subsubsection
+Meson Fits
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\eta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha'_{w/casimir}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.86-0.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.81-0.88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.735-0.767
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.825-0.846
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha'_{mass}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.896
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.909
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.839
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.844
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m_{w/casimir}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+150-300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-196
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-56
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-203
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m_{mass}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+65
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+170
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Baryon Fits
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Sigma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha'_{w/casimir}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.94-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.06-1.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.11-1.48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha'_{mass}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.959
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.955
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.502
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m_{w/casimir}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-150
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+390-410
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500-569
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m_{mass}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+62.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+595
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mass Differences
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Decay Rates
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma_{K^{*}\rightarrow K^{-}\pi^{+}}=L\times e^{-m_{q}^{2}/T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Bibliography
+\end_layout
+
+\begin_layout Part
+Appendix
+\end_layout
+
+\begin_layout Section
+Conventions
+\end_layout
+
+\begin_layout Standard
+The convention for the metric tensor is the same as in J.
+ D.
+ Jackson 3rd edition (equation 11.59, 11.81):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g_{\mu\nu}=sig(+,-,-,-)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and for the electromagnetic field tensor (equations 11.136, 11.137, 11.138):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F^{\alpha\beta}=\left(\begin{array}{cccc}
+0 & -E_{1} & -E_{2} & -E_{3}\\
+E_{1} & 0 & -B_{3} & B_{2}\\
+E_{2} & B_{3} & 0 & -B_{1}\\
+E_{3} & -B_{2} & B_{1} & 0
+\end{array}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $F_{\alpha\beta}=\left(\begin{array}{cccc}
+0 & E_{1} & E_{2} & E_{3}\\
+-E_{1} & 0 & -B_{3} & B_{2}\\
+-E_{2} & B_{3} & 0 & -B_{1}\\
+-E_{3} & -B_{2} & B_{1} & 0
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mathematica code
+\end_layout
+
+\end_body
+\end_document
