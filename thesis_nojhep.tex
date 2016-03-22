@@ -696,17 +696,22 @@ The calculation of the various fields is then reduced to a geometric calculation
 The result for the electromagnetic fields and potentials:
 \label{eq:fields}
 \begin{align}
-&A^{0}\left(l_{1}\right)=\frac{q\omega}{\beta_{1}\beta_{2}\sin(\Delta\phi)+\Delta\phi}\\
-&A^{\theta}\left(l_{1}\right)=-\frac{\beta_{2}q\omega\cos(\Delta\phi)}{\beta_{1}\beta_{2}\sin(\Delta\phi)+\Delta\phi}\\
+&A^{0}\left(l_{1}\right)=\frac{q_2\omega}{\beta_{1}\beta_{2}\sin(\Delta\phi)+\Delta\phi}\\
+&A^{\theta}\left(l_{1}\right)=-\frac{\beta_{2}q_2\omega\cos(\Delta\phi)}{\beta_{1}\beta_{2}\sin(\Delta\phi)+\Delta\phi}\\
 &\vec{E}=\left\{ \begin{array}{c}
--\frac{q\omega^{2}\left(\beta_{1}\left(\beta_{2}^{2}\cos(2\Delta\phi)+\beta_{2}^{2}-2\right)+2\beta_{2}\cos(\Delta\phi)\left(\beta_{2}^{2}-1\right)-2\Delta\phi\beta_{2}\sin(\Delta\phi)\right)}{2\left(\Delta\phi+\beta_{1}\beta_{2}\sin(\Delta\phi)\right)^{3}}\\
-\frac{q\beta_{2}\omega^{2}\left(\sin(\Delta\phi)\left(\beta_{1}^{2}+\beta_{2}^{2}+\beta_{1}\beta_{2}\cos(\Delta\phi)-1\right)+\Delta\phi\left(\cos(\Delta\phi)+\beta_{1}\beta_{2}\right)\right)}{\left(\Delta\phi+\beta_{1}\beta_{2}\sin(\Delta\phi)\right)^{3}}\\ 0 \end{array}\right\}\\
+-\frac{q_2 \omega ^2 \left(2 \beta_2 \left(\beta_1^2-\Delta \theta ^2+1\right) \cos (\Delta \theta )+\beta_1 \beta_2^2 \cos (2 \Delta \theta )+\beta_1 \beta_2^2+2 \beta_1+2 \beta_2 \Delta \theta  \sin (\Delta \theta )\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}\\
+\frac{\beta_2 q_2 \omega ^2 \left(\beta_1 \beta_2 (\sin (2 \Delta \theta )-2 \Delta \theta )-2 \left(\Delta \theta ^2-1\right) \sin (\Delta \theta )-2 \Delta \theta  \cos (\Delta \theta )\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}\\ 
+0\end{array}\right\}\\
 &\vec{B}=\left\{ \begin{array}{c}
 0\\
 0\\
-\frac{q\beta_{2}\omega^{2}\left(\Delta\phi\left(\beta_{1}^{2}\beta_{2}+\beta_{1}\cos(\Delta\phi)\left(\beta_{2}^{2}+1\right)+\beta_{2}\right)+\beta_{1}\sin(\Delta\phi)\left(\beta_{1}^{2}+2\beta_{1}\beta_{2}\cos(\Delta\phi)+\beta_{2}^{2}\right)\right)}{\Delta\phi\left(\Delta\phi+\beta_{1}\beta_{2}\sin(\Delta\phi)\right)^{3}}
+\frac{\beta_2 q_2 \omega ^2 \left(\beta_1^2 \beta_2+\beta_1 \left(\beta_2^2+1\right) \cos (\Delta \theta )+\beta_1 \Delta \theta  \sin (\Delta \theta )+\beta_2\right)}{(\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}
 \end{array}\right\}
 \end{align}
+
+This was obtained using mathematica and is presented in the appendix. To see that this complicated expression makes physical sense we calculate it in the nonrelativistic limit. First in the case of equal quark masses. This implies equal quark velocities, and we get:
+
+
 
 \end{subequations} 
  
