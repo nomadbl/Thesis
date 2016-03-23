@@ -175,13 +175,12 @@ Where
 \item[$\alpha'$] is the slope parameter as defined above
 \end{description}
 
-The SYM theory lives on the boundary of AdS while the string theory lives in the bulk. The perturbative description is valid for small $g_{YM}$ while the supergravity description is valid for large radii, hence large $\lambda$ and large $g_{YM}$. In this sense it is also a weak-strong coupling correspondence. A consequence of the correspondence must be that correlation functions in the gauge theory can be computed in the string theory by using the gauge theory operator insertions as the boundary conditions for the string theory computations. The correspondence in the generating functional is:
+The SYM theory lives on the boundary of AdS while the string theory lives in the bulk. The perturbative description is valid for small $g_{YM}$ while the supergravity description is valid for large radii, hence large $\lambda$ and finite $g_{YM}$. In this sense it is also a weak-strong coupling correspondence. A consequence of the correspondence must be that correlation functions in the gauge theory can be computed in the string theory by using the gauge theory operator insertions as the boundary conditions for the string theory computations. The correspondence in the generating functional is:
 \begin{equation}
-Z_{SYM}\left(\Phi_0\right)=< e^{\int d^4x\Phi_0\left(x\right)Q\left(x\right)}>
-\sim Z_{stringy}\left(\Phi_0\right)=\int\limits_{\Phi\rightarrow\Phi_0}\mathcal{D}\Phi e^{-S\left[\Phi\right]}
+Z_{SYM}\left(\theta_0\right)=< e^{\int d^4x\theta_0\left(x\right)Q\left(x\right)}>
+\sim Z_{stringy}\left(\theta_0\right)=\int\limits_{\theta\rightarrow\theta_0}\mathcal{D}\theta e^{-S\left[\theta\right]}
 \end{equation}
-Where $\Phi_0\left(x\right)$ is the source of the boundary field $Q\left(x\right)$.
-
+Where $\theta_0\left(x\right)$ is the source of the boundary field $Q\left(x\right)$.
 
 SYM theory is a supersymmetric version of Yang Mills theory, which turns out to be conformally invariant at the quantum level. The most powerfull evidence for the AdS/CFT correspondence is the correspondence of $SYM\mathcal{N}=4$ theory to string theory on the $AdS_5\times S_5$ background. The correspondence in this case is supported by the fact that the two theories contain the same symmetries. We will now briefly describe conformal symmetry ,supersymmetry and the symmetries of AdS space.
 
@@ -514,14 +513,7 @@ In \cite{Sonnenschein14} the charges of the quarks have not been taken account o
 \FloatBarrier
 \section{Charged Holographic Strings}
 
-In the standard model, the known relations,
-\begin{subequations}
-\begin{align}
-&Y=B+S+C+B'+T\\
-&Q=I_3+\frac{1}{2}Y
-\end{align}
-\end{subequations}
-relate the Hypercharge ,Stranegeness $S=-(n_s-n_{\bar{s}})$, Charm $C=(n_c-n_{\bar{c}})$, Bottomness $B'=-(n_b-n_{\bar{b}})$, Topness $T=(n_t-n_{\bar{t}})$, Baryon number ($\frac{1}{3}$ for quarks) and the Isospin to the Electric charge of the quarks. In this way the flavors provide another dynamical component to the system which we need to take account of. In our model we take account of the electromagnetic interaction by associating electric charge with the string endpoints. We now present the formulation and analyze the model.
+The strings in our model attach to stacks of $N_f$ flavor branes. As such they are charged under the gauge group $SU(N_f)$. If the flavor branes are seperated this gauge group gets broken spontaneously down to a number of $SU(1)$ gauge groups, which is just the electromagnetic interaction. In our model we take account of the electromagnetic interaction by associating electric charge with the string endpoints. We now present the formulation and analyze the model.
 
 \FloatBarrier
 \subsection{The Action}
@@ -634,7 +626,7 @@ The Lienard-Wichert formulas for the fields of a point charge are \cite{Jackson}
 
 \begin{subequations}
 \begin{align}
-&\phi\left(\vec{x},t\right)=\left[\cfrac{e}{\left(1-\vec{\beta}\cdot\vec{n}\right)R}\right]_{ret}\\
+&\theta\left(\vec{x},t\right)=\left[\cfrac{e}{\left(1-\vec{\beta}\cdot\vec{n}\right)R}\right]_{ret}\\
 &\vec{A}\left(\vec{x},t\right)=\left[\cfrac{e\vec{\beta}}{\left(1-\vec{\beta}\cdot\vec{n}\right)R}\right]_{ret}\\
 &\vec{E}\left(\vec{x},t\right)=\left[e\cfrac{\vec{n}-\vec{\beta}}{\gamma^{2}\left(1-\vec{\beta}\cdot\vec{n}\right)^{3}R^{2}}+\cfrac{e}{c}\cfrac{\vec{n}\times\left\{ \left(\vec{n}-\vec{\beta}\right)\times\dot{\vec{\beta}}\right\} }{\left(1-\vec{\beta}\cdot\vec{n}\right)^{3}R}\right]_{ret}\\
 &\vec{B}\left(\vec{x},t\right)=\left[\vec{n}\times\vec{E}\right]_{ret}
@@ -666,28 +658,28 @@ Where
 \draw[thick,blue] (O) circle [radius=4];
 \draw[dashed,thick,blue] (O) --node[sloped,above]{$l_1$}(Q);
 \draw[dashed,thick,blue] (PP) --node[sloped,above]{$R_{ret}$}(Q);
-\draw[dashed,thick,blue] (P)--(O)--node[sloped,above]{$l_2$}(PP) pic[draw=green,fill=green,<->,angle radius=1.5cm,"$ \Delta\phi $"] {angle= P--O--PP};
+\draw[dashed,thick,blue] (P)--(O)--node[sloped,above]{$l_2$}(PP) pic[draw=green,fill=green,<->,angle radius=1.5cm,"$ \Delta\theta $"] {angle= P--O--PP};
 \end{tikzpicture}
-\caption{The geometry of the system. The points $Q$,$P$ and $P_{ret}$ are the "recieving" particle, the emmiting particle and the position of the emmiting particle at retarded time, respectively. $\Delta\phi$ is the so called retardation angle. $l_1$ and $l_2$ are the respective radii of rotation and $R_{ret}$ is the retarded distance.}
+\caption{The geometry of the system. The points $Q$,$P$ and $P_{ret}$ are the "recieving" particle, the emmiting particle and the position of the emmiting particle at retarded time, respectively. $\Delta\theta$ is the so called retardation angle. $l_1$ and $l_2$ are the respective radii of rotation and $R_{ret}$ is the retarded distance.}
 \label{fig:geometry}
 \end{figure}
 
-We will see shortly that the key quantities will be the velocities of the quarks $\beta_1$ ,$\beta_2$ and  the retardation angle $\Delta\phi$ defined in figure \ref{fig:geometry}. Looking at figure \ref{fig:geometry} we can use the cosine law to relate the retardation angle with the retarded distance $R_{ret}$:
+We will see shortly that the key quantities will be the velocities of the quarks $\beta_1$ ,$\beta_2$ and  the retardation angle $\Delta\theta$ defined in figure \ref{fig:geometry}. Looking at figure \ref{fig:geometry} we can use the cosine law to relate the retardation angle with the retarded distance $R_{ret}$:
 \begin{equation*}
-R_{ret}^2=l_1^2+l_2^2-2l_1l_2\cos\left(\pi-\Delta\phi\right)
+R_{ret}^2=l_1^2+l_2^2-2l_1l_2\cos\left(\pi-\Delta\theta\right)
 \end{equation*} 
 By the definitino of the retarded time, it is both ($c=1$):
 \begin{itemize}
 \item The time it takes the light signal to get from $P_{ret}$ to $Q$. $t-t_{ret}=R_{ret}$
-\item The time it takes the emmiting particle to get from $P_{ret}$ to $P$. $\omega l_2 \left(t-t_{ret}\right)=l_2\Delta\phi$
+\item The time it takes the emmiting particle to get from $P_{ret}$ to $P$. $\omega l_2 \left(t-t_{ret}\right)=l_2\Delta\theta$
 \end{itemize}
-Where $\omega$ is the rate of rotation of both particles. The conclusion being that $\frac{\Delta\phi}{\omega}=R_{ret}$. Combining this with the cosine law result gives:
+Where $\omega$ is the rate of rotation of both particles. The conclusion being that $\frac{\Delta\theta}{\omega}=R_{ret}$. Combining this with the cosine law result gives:
 \begin{equation}
 \label{eq:retardation}
-\Delta\phi^{2}=\beta_{1}^{2}+\beta_{2}^{2}+2\beta_{1}\beta_{2}cos\left(\Delta\phi\right)
+\Delta\theta^{2}=\beta_{1}^{2}+\beta_{2}^{2}+2\beta_{1}\beta_{2}cos\left(\Delta\theta\right)
 \end{equation}
 
-Here $\beta_i=\omega l_i$.This condition relates the “retardation angle” $\Delta\phi$ and the velocities of the string end points. This equation is solved numerically, giving implicitly the function $\Delta\phi=f\left(\beta_{1}\right)$.
+Here $\beta_i=\omega l_i$.This condition relates the “retardation angle” $\Delta\theta$ and the velocities of the string end points. This equation is solved numerically, giving implicitly the function $\Delta\theta=f\left(\beta_{1}\right)$.
 It can also be solved approximately by guessing a power series solution (in powers of $\beta $ or $1-\beta $) and solving for the coefficients iterativley.
 
 The calculation of the various fields is then reduced to a geometric calculation where everything will depend on the length of the string and the rate of rotation.
@@ -696,19 +688,49 @@ The calculation of the various fields is then reduced to a geometric calculation
 The result for the electromagnetic fields and potentials:
 \label{eq:fields}
 \begin{align}
-&A^{0}\left(l_{1}\right)=\frac{q\omega}{\beta_{1}\beta_{2}\sin(\Delta\phi)+\Delta\phi}\\
-&A^{\theta}\left(l_{1}\right)=-\frac{\beta_{2}q\omega\cos(\Delta\phi)}{\beta_{1}\beta_{2}\sin(\Delta\phi)+\Delta\phi}\\
+&A^{0}\left(l_{1}\right)=\frac{q_2\omega}{\beta_{1}\beta_{2}\sin(\Delta \theta)+\Delta\theta}\\
+&A^{\theta}\left(l_{1}\right)=-\frac{\beta_{2}q_2\omega\cos(\Delta\theta)}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}\\
 &\vec{E}=\left\{ \begin{array}{c}
--\frac{q\omega^{2}\left(\beta_{1}\left(\beta_{2}^{2}\cos(2\Delta\phi)+\beta_{2}^{2}-2\right)+2\beta_{2}\cos(\Delta\phi)\left(\beta_{2}^{2}-1\right)-2\Delta\phi\beta_{2}\sin(\Delta\phi)\right)}{2\left(\Delta\phi+\beta_{1}\beta_{2}\sin(\Delta\phi)\right)^{3}}\\
-\frac{q\beta_{2}\omega^{2}\left(\sin(\Delta\phi)\left(\beta_{1}^{2}+\beta_{2}^{2}+\beta_{1}\beta_{2}\cos(\Delta\phi)-1\right)+\Delta\phi\left(\cos(\Delta\phi)+\beta_{1}\beta_{2}\right)\right)}{\left(\Delta\phi+\beta_{1}\beta_{2}\sin(\Delta\phi)\right)^{3}}\\ 0 \end{array}\right\}\\
+-\frac{q_2 \omega ^2 \left(2 \beta_2 \left(\beta_1^2-\Delta \theta ^2+1\right) \cos (\Delta \theta )+\beta_1 \beta_2^2 \cos (2 \Delta \theta )+\beta_1 \beta_2^2+2 \beta_1+2 \beta_2 \Delta \theta  \sin (\Delta \theta )\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}\\
+\frac{\beta_2 q_2 \omega ^2 \left(\beta_1 \beta_2 (\sin (2 \Delta \theta )-2 \Delta \theta )-2 \left(\Delta \theta ^2-1\right) \sin (\Delta \theta )-2 \Delta \theta  \cos (\Delta \theta )\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}\\ 
+0\end{array}\right\}\\
 &\vec{B}=\left\{ \begin{array}{c}
 0\\
 0\\
-\frac{q\beta_{2}\omega^{2}\left(\Delta\phi\left(\beta_{1}^{2}\beta_{2}+\beta_{1}\cos(\Delta\phi)\left(\beta_{2}^{2}+1\right)+\beta_{2}\right)+\beta_{1}\sin(\Delta\phi)\left(\beta_{1}^{2}+2\beta_{1}\beta_{2}\cos(\Delta\phi)+\beta_{2}^{2}\right)\right)}{\Delta\phi\left(\Delta\phi+\beta_{1}\beta_{2}\sin(\Delta\phi)\right)^{3}}
+\frac{\beta_2 q_2 \omega ^2 \left(\beta_1^2 \beta_2+\beta_1 \left(\beta_2^2+1\right) \cos (\Delta \theta )+\beta_1 \Delta \theta  \sin (\Delta \theta )+\beta_2\right)}{(\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}
 \end{array}\right\}
 \end{align}
-
 \end{subequations} 
+
+This was obtained using mathematica and is presented in section \ref{sec:EMFields}. To see that this complicated expression makes physical sense we calculate it in the nonrelativistic limit. In this limit we have
+\begin{subequations}
+\begin{align}
+&\beta\rightarrow 0 \\
+&\beta_1\rightarrow\beta &\beta_2\rightarrow\beta \\
+&\Delta\theta \rightarrow 2\beta  & \omega\rightarrow \frac{2\beta}{L}\\
+\end{align}
+\end{subequations}
+Using these we calculate the limits for the fields and potentials and get:
+
+\begin{subequations}
+\label{eq:fieldsNonrelativistic}
+\begin{align}
+&A^{0}\left(l_{1}\right)=\frac{q_2}{L}\\
+&A^{\theta}\left(l_{1}\right)=-\frac{\beta q_2}{L}\\
+&\vec{E}=\left\{ \begin{array}{c}
+-\frac{q_2}{L^2}\\
+0\\
+0
+\end{array}\right\}
+&\vec{B}=\left\{ \begin{array}{c}
+0\\
+0\\
+\frac{\beta q_2}{L^2}
+\end{array}\right\}
+\end{align}
+\end{subequations}
+
+This shows that when $\beta=0$ we have no magnetic field and only an electrostatic field. We will use equations \ref{eq:fields} in the next sections.
  
 \FloatBarrier
 \subsection{Equations of Motion}
@@ -797,7 +819,7 @@ We want the equation in the radial direction, so we also specialize to $\tau=0$,
 m_{1}\cfrac{\omega\beta_{1}}{\sqrt{1-\beta_{1}^{2}}}+q_{1}\beta_{1}B_{3}\left(l_{1}\right)+q_{1}E_{1}\left(l_{1}\right)-T\sqrt{1-\beta_{1}^{2}}=0
 \end{equation}
 
-We can see a string tension term, a centrifugal term and an electromagnetic term. This equation constitutes a constraint implicitly giving $\omega=\omega\left(\beta_{1},\beta_{2},m_{1},m_{2},q_{1},q_{2},T\right)$. Using the fact that $T,q_1q_2,\omega$ and $\Delta\phi$ are the same for both end points, the force equations for the two end points also provide a relation between $\left\{ m_{1},m_{2},\beta_{1},\beta_{2}\right\}$. In the case of $q_1q_2=0$ it is just:
+We can see a string tension term, a centrifugal term and an electromagnetic term. This equation constitutes a constraint implicitly giving $\omega=\omega\left(\beta_{1},\beta_{2},m_{1},m_{2},q_{1},q_{2},T\right)$. Using the fact that $T,q_1q_2,\omega$ and $\Delta\theta$ are the same for both end points, the force equations for the two end points also provide a relation between $\left\{ m_{1},m_{2},\beta_{1},\beta_{2}\right\}$. In the case of $q_1q_2=0$ it is just:
 \begin{equation}
 \label{eq:massrelation}
 \gamma_{1}^{2}\beta_{1}m_{1}\omega=T=\gamma_{2}^{2}\beta_{2}m_{2}\omega
@@ -893,7 +915,7 @@ Notice in the electromagnetic part we took just one contribution out of the two 
 Inserting the spinning string solution \ref{eq:SpinningStringAnsatz} and electromagnetic potential \ref{eq:fields} we get
 \begin{align}
 E&=T\int_{-l_{2}}^{l_{1}}d\sigma\cfrac{1}{\sqrt{1-\omega^{2}\sigma^{2}}}+m\cfrac{1}{\sqrt{1-\sigma^{2}\omega^{2}}}|_{-l_{2}}^{l_{1}}+\frac{q_{1}q_{2}\omega}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}=\notag\\
-&=T\frac{sin^{-1}(\beta_{1})}{\omega}+T\frac{sin^{-1}\left(\beta_{2}\right)}{\omega}+\cfrac{m_{1}}{\sqrt{1-\beta_{1}^{2}}}+\cfrac{m_{2}}{\sqrt{1-\beta_{2}^{2}}}+\frac{q_{1}q_{2}\omega}{\beta_{1}\beta_{2}\sin(\Delta\phi)+\Delta\phi}
+&=T\frac{sin^{-1}(\beta_{1})}{\omega}+T\frac{sin^{-1}\left(\beta_{2}\right)}{\omega}+\cfrac{m_{1}}{\sqrt{1-\beta_{1}^{2}}}+\cfrac{m_{2}}{\sqrt{1-\beta_{2}^{2}}}+\frac{q_{1}q_{2}\omega}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}
 \end{align} 
 \FloatBarrier
  \subsection{Angular Momentum}
@@ -907,8 +929,8 @@ J&=\int d\sigma\cfrac{\partial\mathcal{L}}{\partial\dot{\theta}}+\cfrac{\partial
 Inserting the spinning string solution \ref{eq:SpinningStringAnsatz} and electromagnetic potential \ref{eq:fields} we get
 \begin{align}
 J&=T\int_{-l_{2}}^{l_{1}}d\sigma\cfrac{\sigma^{2}\omega}{\sqrt{1-\sigma^{2}\omega^{2}}}+m_1\cfrac{l_{1}^{2}\omega}{\sqrt{1-l_{1}^{2}\omega^{2}}}+m_2\cfrac{l_{2}^{2}\omega}{\sqrt{1-l_{2}^{2}\omega^{2}}}+\notag \\
-&-q_{1}q_{2}\frac{\beta_{1}\beta_{2}\cos(\Delta\phi)}{\beta_{1}\beta_{2}\sin(\Delta\phi)+\Delta\phi}-q_{1}q_{2}\frac{\beta_{1}\beta_{2}\cos(\Delta\phi)}{\beta_{1}\beta_{2}\sin(\Delta\phi)+\Delta\phi}=\notag\\
-&=T\cfrac{-\cfrac{\beta_{1}}{\gamma_{1}}+sin^{-1}\left(\beta_{1}\right)-\cfrac{\beta_{2}}{\gamma_{2}}+sin^{-1}\left(\beta_{2}\right)}{2\omega^{2}}+m_1\cfrac{\gamma_{1}\beta_{1}^{2}}{\omega}+m_2\cfrac{\gamma_{2}\beta_{2}^{2}}{\omega}-q_{1}q_{2}\frac{2\beta_{1}\beta_{2}\cos(\Delta\phi)}{\beta_{1}\beta_{2}\sin(\Delta\phi)+\Delta\phi}
+&-q_{1}q_{2}\frac{\beta_{1}\beta_{2}\cos(\Delta\theta)}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}-q_{1}q_{2}\frac{\beta_{1}\beta_{2}\cos(\Delta\theta)}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}=\notag\\
+&=T\cfrac{-\cfrac{\beta_{1}}{\gamma_{1}}+sin^{-1}\left(\beta_{1}\right)-\cfrac{\beta_{2}}{\gamma_{2}}+sin^{-1}\left(\beta_{2}\right)}{2\omega^{2}}+m_1\cfrac{\gamma_{1}\beta_{1}^{2}}{\omega}+m_2\cfrac{\gamma_{2}\beta_{2}^{2}}{\omega}-q_{1}q_{2}\frac{2\beta_{1}\beta_{2}\cos(\Delta\theta)}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}
 \end{align} 
 \FloatBarrier
  \subsection{Regge Trajectories and the Regge Intercept}
@@ -962,9 +984,9 @@ Adding the appropriate terms to the expressions for the energy and boundary equa
 \begin{subequations}
 \label{eq:regge}
 \begin{align}
-&E=\cfrac{T}{\omega}\left(\sin^{-1}(\beta_{1})+\sin^{-1}(\beta_{2})\right)+\gamma_{1}m_{1}+\gamma_{2}m_{2}+\frac{q_{1}q_{2}\omega}{\beta_{1}\beta_{2}\sin(\Delta\phi)+\Delta\phi}-\frac{\pi}{2}\frac{\tilde{a}\omega}{\beta_{1}+\beta_{2}}\\
-&J=T\cfrac{-\cfrac{\beta_{1}}{\gamma_{1}}+sin^{-1}\left(\beta_{1}\right)-\cfrac{\beta_{2}}{\gamma_{2}}+sin^{-1}\left(\beta_{2}\right)}{2\omega^{2}}+m_{1}\cfrac{\gamma_{1}\beta_{1}^{2}}{\omega}+m_{2}\cfrac{\gamma_{2}\beta_{2}^{2}}{\omega}-2q_{1}q_{2}\beta_{1}\beta_{2}\frac{cos\left(\Delta\phi\right)}{\beta_{1}\beta_{2}sin\left(\Delta\phi\right)+\Delta\phi}\\
-&\Delta\phi^{2}=\beta_{1}^{2}+\beta_{2}^{2}+2\beta_{1}\beta_{2}cos\left(\Delta\phi\right)\\
+&E=\cfrac{T}{\omega}\left(\sin^{-1}(\beta_{1})+\sin^{-1}(\beta_{2})\right)+\gamma_{1}m_{1}+\gamma_{2}m_{2}+\frac{q_{1}q_{2}\omega}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}-\frac{\pi}{2}\frac{\tilde{a}\omega}{\beta_{1}+\beta_{2}}\\
+&J=T\cfrac{-\cfrac{\beta_{1}}{\gamma_{1}}+sin^{-1}\left(\beta_{1}\right)-\cfrac{\beta_{2}}{\gamma_{2}}+sin^{-1}\left(\beta_{2}\right)}{2\omega^{2}}+m_{1}\cfrac{\gamma_{1}\beta_{1}^{2}}{\omega}+m_{2}\cfrac{\gamma_{2}\beta_{2}^{2}}{\omega}-2q_{1}q_{2}\beta_{1}\beta_{2}\frac{cos\left(\Delta\theta\right)}{\beta_{1}\beta_{2}sin\left(\Delta\theta\right)+\Delta\theta}\\
+&\Delta\theta^{2}=\beta_{1}^{2}+\beta_{2}^{2}+2\beta_{1}\beta_{2}cos\left(\Delta\theta\right)\\
 &\gamma_{1}^{2}\beta_{1}m_{1}=\gamma_{2}^{2}\beta_{2}m_{2}\\
 &\frac{T}{\gamma_1}-m_1\beta_1\gamma_1\omega+\frac{\pi}{2}\frac{\tilde{a}\omega^2}{(\beta_1+\beta_2)^2}+\notag\\
 &-\frac{q_1q_2\omega^2\left(\beta_1^3 \beta_2^2+\beta_2 \left(\beta_1^2 \left(\beta_2^2+2\right)+1\right) \cos (\Delta \theta)+\left(\beta_1^2+1\right) \beta_2 \Delta \theta  \sin (\Delta \theta )+2 \beta_1 \beta_2^2+\beta_1\right)}{(\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}=0
@@ -1138,7 +1160,7 @@ $M_{i,model}^{2},M_{i,pdg}^{2}$ are the measured and calculated masses squared o
 	\subfloat[$a_0$ fit]{
 	\includegraphics[scale=0.5]{figures/aFit.png}}
 	~
-	\subfloat[$\phi$ fit]{
+	\subfloat[$\theta$ fit]{
 	\includegraphics[scale=0.5]{figures/phiFit.png}}
 \caption{Meson Fits}
 \label{fig:mesonfits1}
@@ -1191,7 +1213,7 @@ $\rho$  & 0.86-1 & 150-300 \\
 $\omega$  & 0.82-0.867 & 0-167 \\
 $\eta$  & 0.735-0.765 & 0-60 \\
 $a_0$ & 0.97-1.06 & 0-67 \\
-$\phi$  & 1.42-1.6 & 450-500 \\
+$\theta$  & 1.42-1.6 & 450-500 \\
 $\kappa$  & 0.95-0.99 & 320-340 \\
 $K$ & 0.824-0.95 & 0-200 \\
 $D$ & 0.77-0.89 & 860-900 \\
@@ -1212,7 +1234,7 @@ $\pi$ & 0.808-0.863 & 90-185 \\
 $\rho$  & 0.883-0.933 & 0-180 \\
 $\omega$  & 0.910-0.918 & 0-60 \\
 $\eta$  & 0.839-0.854 & 0-70 \\
-$\phi$  & 1.078 & 400 \\
+$\theta$  & 1.078 & 400 \\
 $\kappa$  & 0.848-0.927 & $m_{u/d}=0-240\; m_s=0-390$ \\
 $D$ & 1.073 & $m_{u/d}=80\; m_c=1640$ \\
 $\varUpsilon$  & 0.635 & 4730 \\
@@ -1366,11 +1388,14 @@ F_{\alpha\beta}=\left(\begin{array}{cccc}
 \end{array}\right)
 \end{equation*}
 \FloatBarrier
+\section{Calculating the electromagnetic fields}
+\label{sec:EMFields}
+
 \section{Taking The Nonrelativistic Limit}
 \label{sec:nonrelativistic}
 In this appendix I will show the manner of taking the nonrelativistic limit in order to arrive at equations \ref{eq:nonrelativistic}.
 
-We start out from equations \ref{eq:regge}, taking the limit $\beta_1\rightarrow0$. We need to determine the $\beta_1$ dependence of the quantities $\beta_2$,$\Delta\phi$ and $\sin\left(\Delta\phi\right)$. 
+We start out from equations \ref{eq:regge}, taking the limit $\beta_1\rightarrow0$. We need to determine the $\beta_1$ dependence of the quantities $\beta_2$,$\Delta\theta$ and $\sin\left(\Delta\theta\right)$. 
 
 Determining $\beta_2$ is done using using equation \ref{eq:massrelation}. The form for $\beta_2$ is $\beta_2=a_0+a_1\beta_1+O\left(\beta^3\right)$. Replacing into the equation results in a power series in $\beta_1$ which is equated to zero, so that each coefficient in the series must vanish. This gives equations for the coefficients $\left(a_0,a_1,...\right)$ with the result
 \begin{equation*}
@@ -1380,13 +1405,13 @@ Mathematica code for the computation of $\beta_2$:
 
 \includegraphics[scale=0.7]{figures/nonrelativisticb2.png}
 
-Using the same method we compute $\Delta\phi$ from equation \ref{eq:retardation}. We put in the solution for $\beta_2$ and get
+Using the same method we compute $\Delta\theta$ from equation \ref{eq:retardation}. We put in the solution for $\beta_2$ and get
 \begin{equation*}
-\Delta\phi=\frac{m_1+m_2}{m_2}\beta_1+O\left(\beta_1^2\right)
+\Delta\theta=\frac{m_1+m_2}{m_2}\beta_1+O\left(\beta_1^2\right)
 \end{equation*}
-The solution of $\sin\left(\Delta\phi\right)$ relevant to us is immediate by noting that for $\Delta\phi\rightarrow0$, $\Delta\phi\approx\sin\left(\Delta\phi\right)$.
+The solution of $\sin\left(\Delta\theta\right)$ relevant to us is immediate by noting that for $\Delta\theta\rightarrow0$, $\Delta\theta\approx\sin\left(\Delta\theta\right)$.
 
-Mathematica code for the computation of $\Delta\phi$:
+Mathematica code for the computation of $\Delta\theta$:
 
 \includegraphics[scale=0.7]{figures/nonrelativisticphi.png}
 
@@ -1406,7 +1431,7 @@ Which is what we expected.
 \section{Obtaining Analytic Trajectories}
 \label{sec:analytic}
 \subsection{Relativistic Limit}
-The code for obtaining $\beta_2\left(\beta_1\right)$ and $\Delta\phi\left(\beta_1\right)$ (here called $\theta$):
+The code for obtaining $\beta_2\left(\beta_1\right)$ and $\Delta\theta\left(\beta_1\right)$ (here called $\theta$):
 
 \includegraphics[width=\linewidth]{figures/AnalyticRelativisticKin}
 
@@ -1415,7 +1440,7 @@ Using that, the code for obtaining the trajectory is:
 \includegraphics[width=\linewidth]{figures/AnalyticRelativisticRegge}
 
 \subsection{Non Relativistic Limit}
-The code for obtaining $\beta_2\left(\beta_1\right)$ and $\Delta\phi\left(\beta_1\right)$ (here called $\theta$):
+The code for obtaining $\beta_2\left(\beta_1\right)$ and $\Delta\theta\left(\beta_1\right)$ (here called $\theta$):
 
 \includegraphics[width=\linewidth]{figures/AnalyticNonRelativisticKin}
 
