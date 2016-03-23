@@ -820,8 +820,9 @@ In the case of equal end point masses the velocities must be equal. This extends
 
 \begin{align}
 \label{eq:endpoint}
-&\frac{T}{\gamma_1}-m_1\beta_1\gamma_1\omega+\notag\\
-&-\frac{q_1q_2\omega^2\left(\beta_1^3 \beta_2^2+\beta_2 \left(\beta_1^2 \left(\beta_2^2+2\right)+1\right) \cos (\Delta \theta)+\left(\beta_1^2+1\right) \beta_2 \Delta \theta  \sin (\Delta \theta )+2 \beta_1 \beta_2^2+\beta_1\right)}{(\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}=0
+&\frac{\pi  \omega ^2 (a-S)}{2 (\beta_1+\beta_2)^2}-\frac{\beta_1 m_1 \omega }{\sqrt{1-\beta_1^2}}+T\sqrt{1-\beta_1^2}+\\
+&-q_1 q_2 \omega ^2 \frac{\beta_1 \left(2 \beta_1^2 \beta_2^2+2 \beta_1 \left(\beta_2^2+1\right) \beta_2 \cos (\Delta \theta )+2 \beta_1 \beta_2 \Delta \theta  \sin (\Delta \theta )+3 \beta_2^2+2\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag\\
+&-q_1 q_2 \omega ^2\frac{\beta_2 \left(\left(\beta_1^2-2 \Delta \theta ^2+2\right) \cos (\Delta \theta )+\beta_1^2 \cos (\Delta \theta )+\beta_1 \beta_2 \cos (2 \Delta \theta )+2 \Delta \theta  \sin (\Delta \theta )\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}=0\notag
 \end{align}
 
 %\begin{equation}
@@ -850,16 +851,16 @@ The next issue is the manner of solving these equations. Trying to solve the equ
 \label{fig:EMApproxVerifyVelocity}
 \end{figure}
 
-For completeness' sake, we quote the full equation for the velocity relation, including the casimir force which will be explained later:
+%For completeness' sake, we quote the full equation for the velocity relation, including the casimir force which will be explained later:
 
-\begin{align}
-&\frac{\pi  \tilde{a} \omega }{\sqrt{1-\beta_1^2} (\beta_1+\beta_2)^2}-\frac{\pi  \tilde{a} \omega }{\sqrt{1-\beta_2^2} (\beta_1+\beta_2)^2}+\frac{2 \beta_1 m_1}{\beta_1^2-1}-\frac{2 \beta_2 m_2}{\beta_2^2-1}+ \notag \\
-&+\frac{4 \beta_1^2 \beta_2 q_1 q_2 \omega }{\sqrt{1-\beta_2^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}-\frac{4 \beta_1 \beta_2^2 q_1 q_2 \omega }{\sqrt{1-\beta_1^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag \\
-&+\frac{2 \Delta \theta  q_1 q_2 \omega  \left(\beta_1^2 (-\beta_2) \sqrt{1-\beta_2^2}+\sqrt{1-\beta_1^2} \beta_1 \left(\beta_2^2+1\right)-\beta_2 \sqrt{1-\beta_2^2}\right) \sin (\Delta \theta )}{\sqrt{1-\beta_1^2} \sqrt{1-\beta_2^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag \\
-&+\frac{2 \beta_1^2 \beta_2^3 q_1 q_2 \omega }{\sqrt{1-\beta_2^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}-\frac{2 \beta_1 q_1 q_2 \omega }{\sqrt{1-\beta_1^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}-\frac{2 \beta_1^3 \beta_2^2 q_1 q_2 \omega }{\sqrt{1-\beta_1^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag \\
-&+\frac{2 q_1 q_2 \omega  \left(-\beta_1^2 \beta_2 \sqrt{1-\beta_2^2} \left(\beta_2^2+2\right)+\sqrt{1-\beta_1^2} \beta_1 \left(2 \beta_2^2+1\right)+\sqrt{1-\beta_1^2} \beta_1^3 \beta_2^2-\beta_2 \sqrt{1-\beta_2^2}\right) \cos (\Delta \theta )}{\sqrt{1-\beta_1^2} \sqrt{1-\beta_2^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag \\
-&+\frac{2 \beta_2 q_1 q_2 \omega }{\sqrt{1-\beta_2^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}=0
-\end{align}
+%\begin{align}
+%&\frac{\pi  \tilde{a} \omega }{\sqrt{1-\beta_1^2} (\beta_1+\beta_2)^2}-\frac{\pi  \tilde{a} \omega }{\sqrt{1-\beta_2^2} (\beta_1+\beta_2)^2}+\frac{2 \beta_1 m_1}{\beta_1^2-1}-\frac{2 \beta_2 m_2}{\beta_2^2-1}+ \notag \\
+%&+\frac{4 \beta_1^2 \beta_2 q_1 q_2 \omega }{\sqrt{1-\beta_2^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}-\frac{4 \beta_1 \beta_2^2 q_1 q_2 \omega }{\sqrt{1-\beta_1^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag \\
+%&+\frac{2 \Delta \theta  q_1 q_2 \omega  \left(\beta_1^2 (-\beta_2) \sqrt{1-\beta_2^2}+\sqrt{1-\beta_1^2} \beta_1 \left(\beta_2^2+1\right)-\beta_2 \sqrt{1-\beta_2^2}\right) \sin (\Delta \theta )}{\sqrt{1-\beta_1^2} \sqrt{1-\beta_2^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag \\
+%&+\frac{2 \beta_1^2 \beta_2^3 q_1 q_2 \omega }{\sqrt{1-\beta_2^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}-\frac{2 \beta_1 q_1 q_2 \omega }{\sqrt{1-\beta_1^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}-\frac{2 \beta_1^3 \beta_2^2 q_1 q_2 \omega }{\sqrt{1-\beta_1^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag \\
+%&+\frac{2 q_1 q_2 \omega  \left(-\beta_1^2 \beta_2 \sqrt{1-\beta_2^2} \left(\beta_2^2+2\right)+\sqrt{1-\beta_1^2} \beta_1 \left(2 \beta_2^2+1\right)+\sqrt{1-\beta_1^2} \beta_1^3 \beta_2^2-\beta_2 \sqrt{1-\beta_2^2}\right) \cos (\Delta \theta )}{\sqrt{1-\beta_1^2} \sqrt{1-\beta_2^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag \\
+%&+\frac{2 \beta_2 q_1 q_2 \omega }{\sqrt{1-\beta_2^2} (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}=0
+%\end{align}
 
 \FloatBarrier
 \subsubsection{String Equations}
@@ -977,8 +978,9 @@ Adding the appropriate terms to the expressions for the energy and boundary equa
 &J=T\cfrac{-\cfrac{\beta_{1}}{\gamma_{1}}+sin^{-1}\left(\beta_{1}\right)-\cfrac{\beta_{2}}{\gamma_{2}}+sin^{-1}\left(\beta_{2}\right)}{2\omega^{2}}+m_{1}\cfrac{\gamma_{1}\beta_{1}^{2}}{\omega}+m_{2}\cfrac{\gamma_{2}\beta_{2}^{2}}{\omega}-2q_{1}q_{2}\beta_{1}\beta_{2}\frac{cos\left(\Delta\theta\right)}{\beta_{1}\beta_{2}sin\left(\Delta\theta\right)+\Delta\theta}\\
 &\Delta\theta^{2}=\beta_{1}^{2}+\beta_{2}^{2}+2\beta_{1}\beta_{2}cos\left(\Delta\theta\right)\\
 &\gamma_{1}^{2}\beta_{1}m_{1}=\gamma_{2}^{2}\beta_{2}m_{2}\\
-&\frac{T}{\gamma_1}-m_1\beta_1\gamma_1\omega+\frac{\pi}{2}\frac{\tilde{a}\omega^2}{(\beta_1+\beta_2)^2}+\notag\\
-&-\frac{q_1q_2\omega^2\left(\beta_1^3 \beta_2^2+\beta_2 \left(\beta_1^2 \left(\beta_2^2+2\right)+1\right) \cos (\Delta \theta)+\left(\beta_1^2+1\right) \beta_2 \Delta \theta  \sin (\Delta \theta )+2 \beta_1 \beta_2^2+\beta_1\right)}{(\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}=0
+&\frac{\pi  \omega ^2 (a-S)}{2 (\beta_1+\beta_2)^2}-\frac{\beta_1 m_1 \omega }{\sqrt{1-\beta_1^2}}+T\sqrt{1-\beta_1^2}+\\
+&-q_1 q_2 \omega ^2 \frac{\beta_1 \left(2 \beta_1^2 \beta_2^2+2 \beta_1 \left(\beta_2^2+1\right) \beta_2 \cos (\Delta \theta )+2 \beta_1 \beta_2 \Delta \theta  \sin (\Delta \theta )+3 \beta_2^2+2\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag\\
+&-q_1 q_2 \omega ^2\frac{\beta_2 \left(\left(\beta_1^2-2 \Delta \theta ^2+2\right) \cos (\Delta \theta )+\beta_1^2 \cos (\Delta \theta )+\beta_1 \beta_2 \cos (2 \Delta \theta )+2 \Delta \theta  \sin (\Delta \theta )\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}=0\notag
 \end{align}
 \end{subequations}
 
