@@ -440,8 +440,8 @@ So putting this back in the expressions for the energy and angular momentum resu
 
 \begin{subequations}
 \begin{align}
-&E=\frac{2T}{\frac{T}{m\gamma^2\beta}}\sin^{-1}\left(\beta\right)+2m\gamma\\
-&J=T\frac{-\frac{\beta}{\gamma}+\sin^{-1}\left(\beta\right)}{\left(\frac{T}{m\gamma^2\beta}\right)^{2}}+2m\frac{\gamma\beta^{2}}{\frac{T}{m\gamma^2\beta}}
+&E=2m\gamma^2\beta\sin^{-1}\left(\beta\right)+2m\gamma\\
+&J=m^2\gamma^4\beta^2 \frac{-\frac{\beta}{\gamma}+\sin^{-1}\left(\beta\right)}{T}+\frac{2m^2\gamma^3\beta^{3}}{T}
 \end{align}
 \end{subequations}
 
@@ -457,9 +457,9 @@ The resulting series are:
 \begin{subequations}  
 \begin{align}
 &\text{Light quark limit }\beta\rightarrow1\notag\\
-&J=\alpha' E^2-\frac{8 \sqrt{\pi } \alpha' m^{3/2}}{3}\sqrt{E}+\frac{2}{5}\frac{\pi^{3/2}m^{5/2}\alpha'}{\sqrt{E}} \\
+&J=\alpha' E^2-\frac{8 \sqrt{\pi } \alpha' m^{3/2}}{3}\sqrt{E}+\frac{2}{5}\frac{\pi^{3/2}m^{5/2}\alpha'}{\sqrt{E}}+\hdots \\
 &\text{Heavy quark limit }\beta\rightarrow0\notag\\
-&J=\frac{4\pi\alpha'\sqrt{m} \left(E-2 m\right)^{3/2}}{3\sqrt{3}}+\frac{7\pi\alpha'  \left(E-2m\right)^{5/2}}{54\sqrt{3}\sqrt{m}}
+&J=\frac{4\pi\alpha'\sqrt{m} \left(E-2 m\right)^{3/2}}{3\sqrt{3}}+\frac{7\pi\alpha'  \left(E-2m\right)^{5/2}}{54\sqrt{3}\sqrt{m}}+\hdots
 \end{align}
 \end{subequations}
 
@@ -719,7 +719,27 @@ Using these we calculate the limits for the fields and potentials and get:
 \end{align}
 \end{subequations}
 
-This shows that when $\beta=0$ we have no magnetic field and only an electrostatic field. We will use equations \ref{eq:fields} in the next sections.
+This shows that when $\beta=0$ we have no magnetic field and only an electrostatic field. 
+The fields when the velocities (and masses) are identical are:
+
+\begin{subequations}
+\begin{align}
+&\vec{E}=\left\{ \begin{array}{c}
+\frac{\beta  q_2 \omega ^2 \left(2 \left(\beta ^2-\Delta \theta ^2+1\right) \cos (\Delta \theta )+\beta ^2 \cos (2 \Delta \theta )+\beta ^2+2 \Delta \theta  \sin (\Delta \theta )+2\right)}{2 \left(\beta ^2 \sin (\Delta \theta )+\Delta \theta \right)^3}\\
+\frac{\beta  q_2 \omega ^2 \left(\sin (\Delta \theta ) \left(\beta ^2 (-\cos (\Delta \theta ))+\Delta \theta ^2-1\right)+\beta ^2 \Delta \theta +\Delta \theta  \cos (\Delta \theta )\right)}{\left(\beta ^2 \sin (\Delta \theta )+\Delta \theta \right)^3}\\
+0
+\end{array}\right\}\\
+&\vec{B}=\left\{ \begin{array}{c}
+0\\
+0\\
+\frac{\beta ^2 q_2 \omega ^2 \left(\left(\beta ^2+1\right) \cos (\Delta \theta )+\beta ^2+\Delta \theta  \sin (\Delta \theta )+1\right)}{\left(\beta ^2 \sin (\Delta \theta )+\Delta \theta \right)^3}
+\end{array}\right\}
+\end{align}
+\end{subequations}
+
+We can use this form to take the relativistic limit
+
+We will use equations \ref{eq:fields} in the next sections.
  
 \FloatBarrier
 \subsection{Equations of Motion}
