@@ -737,8 +737,41 @@ The fields when the velocities (and masses) are identical are:
 \end{align}
 \end{subequations}
 
-We can use this form to take the relativistic limit
+We can use this form to take the relativistic limit $\beta=1$.
 
+\begin{subequations}
+\begin{align}
+&\vec{E}=\left\{ \begin{array}{c}
+\frac{q_2 \left(-2 \left(\Delta \theta ^2-2\right) \cos (\Delta \theta )+2 \Delta \theta  \sin (\Delta \theta )+\cos (2 \Delta \theta )+3\right)}{2 l^2 (\Delta \theta +\sin (\Delta \theta ))^3} \\
+\frac{q_2 \left(\left(\Delta \theta ^2-1\right) \sin (\Delta \theta )+\Delta \theta +(\Delta \theta -\sin (\Delta \theta )) \cos (\Delta \theta )\right)}{l^2 (\Delta \theta +\sin (\Delta \theta ))^3} \\
+0
+\end{array}\right\}\\
+&\vec{B}=\left\{ \begin{array}{c}
+0\\
+0\\
+\frac{q_2 (\Delta \theta  \sin (\Delta \theta )+2 \cos (\Delta \theta )+2)}{l^2 (\Delta \theta +\sin (\Delta \theta ))^3} 
+\end{array}\right\}
+\end{align}
+\end{subequations}
+
+We can also solve for $\Delta \theta$ in that limit and get $\Delta \theta=1.47817\approx 0.47 \pi$. Setting into the above fields yields:
+
+\begin{subequations}
+\begin{align}
+&\vec{E}=\left\{ \begin{array}{c}
+\frac{0.162696 q_2}{l^2} \\
+\frac{0.178509 q_2}{l^2} \\
+0
+\end{array}\right\}\\
+&\vec{B}=\left\{ \begin{array}{c}
+0\\
+0\\
+\frac{0.241527 q_2}{l^2}
+\end{array}\right\}
+\end{align}
+\end{subequations}
+
+Calculating the norm of the electric fields gives $|\vec{E}|=\frac{0.241527 q_2}{l^2}$ which is exactly the norm of the magnetic field (given by it's third component).
 We will use equations \ref{eq:fields} in the next sections.
  
 \FloatBarrier
