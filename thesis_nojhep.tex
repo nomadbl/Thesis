@@ -700,7 +700,7 @@ The result for the electromagnetic fields and potentials:
 \end{align}
 \end{subequations} 
 
-This was obtained using mathematica and is presented in section \ref{sec:EMFields}. To see that this complicated expression makes physical sense we calculate it in the nonrelativistic limit. In this limit we have
+Which was obtained using mathematica. To see that this complicated expression makes physical sense we calculate it in the nonrelativistic limit. In this limit we have
 \begin{subequations}
 \begin{align}
 &\beta\rightarrow 0 \\
@@ -1441,17 +1441,75 @@ F_{\alpha\beta}=\left(\begin{array}{cccc}
 \end{array}\right)
 \end{equation*}
 \FloatBarrier
-\section{Calculating the electromagnetic fields}
-\label{sec:EMFields}
+%\section{Calculating the electromagnetic fields}
+%\label{sec:EMFields}
 
 \section{Calculation of the Emitted Radiation}
 \label{sec:radiation}
 
-As stated in the main text, it is necessary to calculate the amount of energy which is radiated out of the hadron as electromagnetic radiation. If the emitted energy is too large the hadron cannot be regarded as stable and our assumption of a steady state is invalid. This calculation can be made in two ways: a heuristic quantum mechanical calculation and a classical calculation.
+All excited hadron states are unstable, decaying either strongly, weakly or electromagnetically as can be seen by the decay products. In the main text we assumed the hadron to be electromagnetically stable, which implies that the radiated energy is negligible and that the angular component of the boundary equations can be ignored. This section describes the calculation of the radiated energy which can be made in two ways: a quantum mechanical calculation and a classical calculation.
+
+\subsection{Classical Calculation}
+
+We can calculate classically the amount of energy which is radiated out of the hadron as electromagnetic radiation. If the emitted energy is too large relative to the hadron mass, the hadron cannot be regarded as electromagnetically stable and our assumption of a steady state is invalid.
+
+By a straightforward calculation of the power radiated by two rotating point charges one obtains
+\begin{equation}
+P=\alpha \omega^2 \Pi\left(\beta\right)
+\end{equation}
+Where $\alpha$ is the fine structure constant, $\omega$ is the rotation frequency and $\Pi\left(\beta\right)$ is a $\beta$ dependent factor which diverges at $\beta=1$. Figure \ref{fig:radiation} is a plot of $\Pi\left(\beta\right)$.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{figures/radiation.png}
+\caption{Envelope of the classical radiation}
+\label{fig:radiation}
+\end{figure}
+Using relation \ref{eq:omega} the radiated power is expressed as
+\begin{equation}
+P=\frac{\alpha^2 T^2}{m_q^2 \gamma^4\beta^2} \Pi\left(\beta\right)
+\end{equation}
+Dividing the radiated power by the hadronic width gives us the total energy radiated over the hadrons' lifetime
+\begin{equation}
+E_{radiated}=\frac{\alpha^2 T^2}{m_q^2 \gamma^4\beta^2 \Gamma_{hadron}} \Pi\left(\beta\right)
+\end{equation}
+It is clear that most of the energy will be radiated by light quarks so we plug in the mass of the lightest quark (or diquark) in the hadron, typically $m_q\simeq 130 MeV$. In order to get a lower bound for the radiated energy we take $\beta=0.7$ (a characteristic value in the Regge fits),$\Pi(0.7)\simeq 100$, $T=0.17 GeV^2$, $\alpha=\frac{1}{137}$ and $\Gamma_{hadron}=200 MeV$. We get
+\begin{equation}
+E_{radiated}\simeq 24 MeV
+\end{equation}
+This figure represents $18\%$ of the Pion mass and $2.6\%$ of the proton mass! It should be noted the value $\Gamma_{hadron}=200 MeV$ represents the shortest lasting hadrons so the result for most hadrons would be an order of magnitude greater. Luckily the quantum mechanical result is much more encouraging.
 
 \subsection{Quantum Mechanical Calculation}
 
+Quantum mechanically we compare the decay width of the hadron with the decay width of the electromagnetic decay channel. If the electromagnetic decay rate is negligible compared with the hadron decay rate, the probability for electromagnetic decay must be negligible. The decay width can be computed using Fermi's golden rule and the dipole approximation, obtaining (in natural units):\cite{Scully97}
+\begin{equation}
+\Gamma=\frac{4\alpha\Delta E^3\vert\langle 1\vert \textbf{r} \vert 2\rangle\vert^2}{3}
+\end{equation}
 
+Where $\Delta E$ is the energy difference between the initial and final "atomic" energy levels. We use here the energy difference between two electromagnetic energy levels in the hadron which we can estimate by using the hydrogen atom relation:
+\begin{equation}
+E_n=-\frac{m_q \alpha^2}{2n^2}
+\end{equation}
+So that the maximal energy difference between two electromagnetic levels is:
+\begin{equation}
+\Delta E=\frac{m_q \alpha^2}{2}
+\end{equation}
+The formula for the width also involves a non-perturbative matrix element. By dimensional analysis it should be proportional to the string length.
+\begin{equation}
+\langle 1\vert \textbf{r} \vert 2\rangle\sim l\simeq \frac{2\beta}{\omega} \simeq \frac{2m_q \gamma^2\beta^2}{T}
+\end{equation}
+where relation \ref{eq:omega} was used. Putting everything together we have
+\begin{equation}
+\Gamma=\frac{2\alpha^7 m_q^5 \gamma^4\beta^4}{3T^2}
+\end{equation}
+Finally, we can estimate an upper bound for the width of decay from one electromagnetic energy level to another by taking $\alpha=\frac{1}{137}$, $m_q=1.5 GeV$, $T=0.17 GeV^2$, $\beta=0.99$ and get
+\begin{equation}
+\Gamma\simeq 4.6\times 10^{-7} MeV
+\end{equation}
+By noting that $\Gamma_{hadron}>1 MeV$, this indicates
+\begin{equation}
+\frac{\tau_{hadron}}{\tau_{electromagnetic}}=\frac{\Gamma_{electromagnetic}}{\Gamma_{hadron}}\lesssim 4.6\times 10^{-7}
+\end{equation}
+Which tells us that the probability for the hadron to experience any electromagnetic decay during its' lifetime is negligible, making it effectively electromagnetically stable.
 \section{Taking The Nonrelativistic Limit}
 \label{sec:nonrelativistic}
 In this appendix I will show the manner of taking the nonrelativistic limit in order to arrive at equations \ref{eq:nonrelativistic}.
@@ -1653,7 +1711,12 @@ Press,
 	\emph{Comments on Baryons in Holographic QCD},
 	JHEP 0901:053,2009,
 	arXiv:0810.1633v3,
-	2008.	
+	2008.
+\bibitem{Scully97}	
+	Marian O Scully, M. Suhail Zubairy,
+	\emph{Quantum optics},  eq. 6.3.14 pp. 206-207,
+	Cambridge University Press,
+	1997.
 	
 \end{thebibliography}
 \end{document}
