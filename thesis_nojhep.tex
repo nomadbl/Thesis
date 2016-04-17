@@ -77,7 +77,29 @@ Q^a=\int\limits_{\partial V} \vec{E}^a \cdot d\vec{S}
 \end{equation}
 An isolated quark far from the boundary of the volume would thus have a color charge which is essentially zero, as the electric field would fall off exponentially with distance. So a quark viewed from a distance much greater than the inverse gluon mass would appear to be a color singlet.
 
-What really distinguishes QCD from a gauge theory with spontaneous symmetry breaking is the fact that meson states in QCD fall on Regge trajectories, which are not found in bound state systems with coloumb or yukawa attractive forces. Regge trajectories are straight lines in the $\left(J,M^2\right)$ plane.
+What distinguishes a confining theory from a gauge theory with spontaneous symmetry breaking is the fact that meson states fall on Regge trajectories, which are not found in bound state systems with coloumb or yukawa attractive forces. Regge trajectories are straight lines in the $\left(J,M^2\right)$ plane. It is well known that a linear quark interaction potential $V(r)=a r$ leads to linear Regge trajectories \cite{LUCHA89}. In gauge theories the operators called wilson lines (or loops) are gauge invariant operators defined by
+\begin{equation}
+W\left(C\right)=\frac{1}{N}\emph{TrP} e^{i\oint\limits_CA_\mu \dot{x}^\mu\left(\tau\right)\mathrm{d}\tau }
+\end{equation}
+The interaction potential of a quark anti-quark pair can be extracted from the infinite strip wilson loop by the relation \cite{Sonnenschein00}:
+\begin{equation}
+\left\langle W\left(C\right)\right\rangle=A\left(L\right)e^{-TE\left(L\right)}
+\end{equation}
+
+\begin{tikzpicture}
+\draw[color=red] (-1.5,-2.5) rectangle (1.5,2.5);
+\draw[<->,dashed] (-1.5,2.6) -- node[anchor=south,near end] {L} (1.5,2.6);
+\draw[<->,dashed] (1.7,-2.5) --node[anchor=west,near end] {T} (1.7,2.5);
+\draw[->] (-2,0) -- (2,0) node[anchor=west] {x};
+\draw[->] (0,-3) -- (0,3) node[anchor=south] {t};
+\end{tikzpicture}
+
+Where \emph{T} is the time extension of the loop. Assuming the interaction potential is linear we get that the wilson loop has an area law behaviour
+\begin{equation}
+\left\langle W\left(C\right)\right\rangle=A\left(L\right)e^{-aTL}
+\end{equation}
+This is why an area law for the wilson loop is considered as a signal for a confining theory.
+
 
 A simple model which was already known in the 60's \cite{Collins} to replicate the linear nature of Regge trajectories, is the spinning open relativistic string given by the Namboo-Goto action. The NG action describes the proper area of the string worldsheet:
 \begin{equation}
@@ -237,24 +259,7 @@ Using the gauge-gravity duality, supergravity backgrounds have been constructed 
 
 \FloatBarrier
 \subsubsection{Stringy Wilson Loop}
-In gauge theories the operators called wilson lines (or loops) are gauge invariant operators defined by
-\begin{equation}
-W\left(C\right)=\frac{1}{N}\emph{TrP} e^{i\oint\limits_CA_\mu \dot{x}^\mu\left(\tau\right)\mathrm{d}\tau }
-\end{equation}
-The energy of a quark anti-quark pair can be extracted from the infinite strip wilson loop by the relation \cite{Sonnenschein00}:
-\begin{equation}
-\left\langle W\left(C\right)\right\rangle=A\left(L\right)e^{-TE\left(L\right)}
-\end{equation}
-
-\begin{tikzpicture}
-\draw[color=red] (-1.5,-2.5) rectangle (1.5,2.5);
-\draw[<->,dashed] (-1.5,2.6) -- node[anchor=south,near end] {L} (1.5,2.6);
-\draw[<->,dashed] (1.7,-2.5) --node[anchor=west,near end] {T} (1.7,2.5);
-\draw[->] (-2,0) -- (2,0) node[anchor=west] {x};
-\draw[->] (0,-3) -- (0,3) node[anchor=south] {t};
-\end{tikzpicture}
-
-Where \emph{T} is the time extension of the loop. In the AdS/CFT correspondence, the stringy dual of the wilson line is the Nambu-Goto string \cite{Maldacena98}.
+In the AdS/CFT correspondence, the stringy dual of the wilson line is the Nambu-Goto string \cite{Maldacena98}.
 \begin{equation}
 \left\langle W\left(C\right)\right\rangle\sim e^{-S_{NG}}
 \end{equation}
@@ -1466,17 +1471,24 @@ Where $\alpha$ is the fine structure constant, $\omega$ is the rotation frequenc
 \end{figure}
 Using relation \ref{eq:omega} the radiated power is expressed as
 \begin{equation}
-P=\frac{\alpha^2 T^2}{m_q^2 \gamma^4\beta^2} \Pi\left(\beta\right)
+P=\frac{\alpha T^2}{m_q^2 \gamma^4\beta^2} \Pi\left(\beta\right)
 \end{equation}
 Dividing the radiated power by the hadronic width gives us the total energy radiated over the hadrons' lifetime
 \begin{equation}
-E_{radiated}=\frac{\alpha^2 T^2}{m_q^2 \gamma^4\beta^2 \Gamma_{hadron}} \Pi\left(\beta\right)
+E_{radiated}=\frac{\alpha T^2}{m_q^2 \gamma^4\beta^2 \Gamma_{hadron}} \Pi\left(\beta\right)
 \end{equation}
-It is clear that most of the energy will be radiated by light quarks so we plug in the mass of the lightest quark (or diquark) in the hadron, typically $m_q\simeq 130 MeV$. In order to get a lower bound for the radiated energy we take $\beta=0.7$ (a characteristic value in the Regge fits),$\Pi(0.7)\simeq 100$, $T=0.17 GeV^2$, $\alpha=\frac{1}{137}$ and $\Gamma_{hadron}=200 MeV$. We get
+In the case of hadrons containing light quarks it is clear that most of the energy will be radiated by light quarks so we plug in the mass of the lightest quark (or diquark) in the hadron, typically $m_q\simeq 130 MeV$. In order to get a lower bound for the radiated energy we take $\beta=0.7$ (a characteristic value in the Regge fits),$\Pi(0.7)\simeq 100$, $T=0.17 GeV^2$, $\alpha=\frac{1}{137}$ and $\Gamma_{hadron}=200 MeV$. We get
 \begin{equation}
-E_{radiated}\simeq 24 MeV
+E_{radiated}\simeq 3312 MeV
 \end{equation}
-This figure represents $18\%$ of the Pion mass and $2.6\%$ of the proton mass! It should be noted the value $\Gamma_{hadron}=200 MeV$ represents the shortest lasting hadrons so the result for most hadrons would be an order of magnitude greater. Luckily the quantum mechanical result is much more encouraging.
+Which is clearly far too large.
+
+In the case of charmonium we have $m_q\simeq 1000 MeV$ and $\Gamma_{\eta_c}=28 MeV$ so we have
+\begin{equation}
+E_{radiated}\simeq 400 MeV
+\end{equation}
+Which is better but still 20\% of the hadron's mass which is too large.
+We see that the classical calculation fails us. Luckily the quantum mechanical result is much more encouraging.
 
 \subsection{Quantum Mechanical Calculation}
 
@@ -1602,6 +1614,11 @@ Press,
 	Prog.Part.Nucl.Phys. 51 (2003) 1,
 	arXiv:hep-lat/0301023v2,
 	2003.
+\bibitem{LUCHA89}
+	wolfgang Lucha, Franz F. Schoberl and Dieter Gromes,
+	\emph{Bound States of Quarks},
+	PHYSICS REPORTS (Review Section of Physics Letters) 200, No. 4 (1991) 127-240,
+	1989.
 \bibitem{Maldacena97}
 	Juan Maldacena,
 	\emph{The Large N Limit of Superconformal Field Theories and Supergravity},
