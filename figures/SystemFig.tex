@@ -1,0 +1,26 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{angles}
+\usetikzlibrary{quotes}
+\begin{document}
+\begin{tikzpicture}[scale=0.75]
+
+\coordinate (PP) at (50:4);
+\coordinate (P) at (10:4);
+\coordinate (O) at (0,0);
+\coordinate (Q) at (190:4);
+\draw (P) node[anchor=west] {P};
+\draw (PP) node[anchor=south] {$P_{ret}$};
+\draw (Q) node[anchor=north] {Q};
+\draw (O) node[anchor=north] {O};
+
+\draw[thick,blue] (O) circle [radius=4];
+\draw[dashed,thick,blue] (O) --node[sloped,above]{$l_1$}(Q);
+\draw[dashed,thick,blue] (PP) --node[sloped,above]{$R_{ret}$}(Q);
+\draw[dashed,thick,blue] (P)--(O)--node[sloped,above]{$l_2$}(PP) pic[draw=green,fill=green,<->,angle radius=1.5cm,"$ \Delta\theta $"] {angle= P--O--PP};
+\end{tikzpicture}
+\end{document}
