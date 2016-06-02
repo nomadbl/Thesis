@@ -1,0 +1,13 @@
+Legended[Graphics[{}, {DisplayFunction -> Identity, AspectRatio -> 1, 
+   AxesLabel -> {"a", "z"}, DisplayFunction :> Identity, Frame -> True, 
+   FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+   GridLinesStyle -> Directive[GrayLevel[0.5, 0.4]], 
+   Method -> {"DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+      Automatic, "ScalingFunctions" -> None}, 
+   PlotRange -> {{-0.1, 0.01}, {0.01, 0.1}}, PlotRangeClipping -> True, 
+   PlotRangePadding -> {{Scaled[0.02], Scaled[0.02]}, 
+     {Scaled[0.02], Scaled[0.02]}}, Ticks -> {Automatic, Automatic}}], 
+ Placed[BarLegend[{Blend["M10DefaultDensityGradient", #1] & , {0., 0.}}, 
+   LabelStyle -> {}, LegendLayout -> "Column", Charting`TickAnnotations -> 
+    None, Charting`TickSide -> Right, ColorFunctionScaling -> True], After, 
+  Identity]]
