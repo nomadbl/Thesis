@@ -1231,11 +1231,24 @@ In section \ref{sec:confrontmassdiff} we present the results of the calculation 
 \subsection{The Regge Trajectories}
 \label{sec:reggefit}
 
-Using the methods outlined in the previous section, we fit the regge trajectories of our model to PDG data for the hadrons. We assume $m_{1}=m_{2}=m$ and generalise using the relation
-\begin{equation}
-2m^{3/2}=m_1^{3/2}+m_2^{3/2}
-\end{equation}
-that holds in the leading order as can be seen from equation \ref{eq:reggeAnalyticLight} and the fits done in \cite{Sonnenschein14} which demonstrate this. Also we take $\alpha_{e}=\frac{1}{137}$.
+Using the methods outlined in the previous section, we numerically fit the Regge trajectories of our model to PDG data for the hadrons.
+
+We separate the treatment into the cases where the quark masses are approximately equal and the cases where the quark masses are expected to differ significantly. In the so called "symmetric" cases we assume $m_{1}=m_{2}$ greatly simplifying the equations. Likewise in the case of greatly differing masses we take the first approximation that the larger mass is stationary, with the other mass orbiting it. In both cases we take $\alpha_{e}=\frac{1}{137}$.
+
+In the case of equal quark masses the boundary equations, energy and angular momentum read:
+
+\begin{subequations}
+\label{eq:regge}
+\begin{align}
+&E=\cfrac{2T}{\omega}\sin^{-1}(\beta))+\gamma_{1}m_{1}+\gamma_{2}m_{2}+\frac{q_{1}q_{2}\omega}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}-\frac{\pi}{2}\frac{\tilde{a}\omega}{\beta_{1}+\beta_{2}}\\
+&J=T\cfrac{-\cfrac{\beta_{1}}{\gamma_{1}}+sin^{-1}\left(\beta_{1}\right)-\cfrac{\beta_{2}}{\gamma_{2}}+sin^{-1}\left(\beta_{2}\right)}{2\omega^{2}}+m_{1}\cfrac{\gamma_{1}\beta_{1}^{2}}{\omega}+m_{2}\cfrac{\gamma_{2}\beta_{2}^{2}}{\omega}-2q_{1}q_{2}\beta_{1}\beta_{2}\frac{cos\left(\Delta\theta\right)}{\beta_{1}\beta_{2}sin\left(\Delta\theta\right)+\Delta\theta}\\
+&\Delta\theta^{2}=\beta_{1}^{2}+\beta_{2}^{2}+2\beta_{1}\beta_{2}cos\left(\Delta\theta\right)\\
+&\gamma_{1}^{2}\beta_{1}m_{1}=\gamma_{2}^{2}\beta_{2}m_{2}\\
+&\frac{\pi  \omega ^2 (a-S)}{2 (\beta_1+\beta_2)^2}-\frac{\beta_1 m_1 \omega }{\sqrt{1-\beta_1^2}}+T\sqrt{1-\beta_1^2}+\\
+&-q_1 q_2 \omega ^2 \frac{\beta_1 \left(2 \beta_1^2 \beta_2^2+2 \beta_1 \left(\beta_2^2+1\right) \beta_2 \cos (\Delta \theta )+2 \beta_1 \beta_2 \Delta \theta  \sin (\Delta \theta )+3 \beta_2^2+2\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag\\
+&-q_1 q_2 \omega ^2\frac{\beta_2 \left(\left(\beta_1^2-2 \Delta \theta ^2+2\right) \cos (\Delta \theta )+\beta_1^2 \cos (\Delta \theta )+\beta_1 \beta_2 \cos (2 \Delta \theta )+2 \Delta \theta  \sin (\Delta \theta )\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}=0\notag
+\end{align}
+\end{subequations}
 
 In previous work \cite{Sonnenschein14,Sonnenschein15} the model with no electric charge was confronted with PDG data. There the intercept was introduced by adding a constant to the angular momentum (method 1 discussed in section \ref{sec:regge}). When done in such a way, there is no way of distinguishing between fits to the total angular momentum $J$ of a hadron, and fits to the orbital angular momentum $J_{orbital}$, of the same hadron, as the intercept could always be adjusted to give either plot. However when introducing an intercept using the casimir energy prescription we can clearly distinguish between the two fits. We find that we cannot fit the model to the total angular momentum $J$ of the hadron. Examples for the $\rho$ and $K^{*}$ mesons can be seen in figure \ref{fig:jfit}. The reason is that the casimir coefficient must be \emph{repulsive} in order for the hadron to be stable at the limit where it is not spinning. As was mentioned in section \ref{sec:regge} this is satisfied when $\tilde{a}<0$. Under this limitation we cannot bring the trajectory to fit in the $J$ plane. However when we plot the same trajectory in the $\left(L,M^2\right)$ plane this intercept disappears: it is just the difference between $J$ and $L$. Therefore, all the fits will be done for $\left(L,E^{2}\right)$. In order to determine the orbital angular momentum from the total angular momentum and parity we use the relations:
 \begin{align*}
@@ -1429,9 +1442,9 @@ As explained in \ref{sec:massdiff} the goal of the calculation requires obtainin
 
 The inconsistency for the $K^{*}$ is made even more clear by figure \ref{fig:kaonmassdiff} which compares the possible $m_u/m_d$ quark mass differences as a function of the casimir coefficient $a$ (the "intercept"), for the kaon and the neutron/proton. Here it is evident that for most values of the intercept, the obtained mass differences are not consistent. In our case the values (shown in table \ref{tab:massdiffdata} and taken from the Regge fits as previously mentioned) for "a" do not allow for a consistency even if some variation from them is allowed.
 
-The $D$ has an even more puzzling and indeed strange result. Notice the charged $D$ is \emph{heavier} that the neutral $D$ while the situation is reversed for the $K^{*}$. This causes the charge contribution to the quark mass difference in $D$ to have a negative sign. This is compounded by the fact that for the $D$ the value of $\tilde{a}$ extracted from the Regge fit was very small while the values for the observed hadronic mass differences is very small ($M_{D^{+}}-M_{D^{0}}=4.77 MeV$). Overall the calculated mass differences turn out to be negative.
+The mass difference calculated from the $D$ trajectory turns out to be negative which is also not consistent with other calculations.
 
-We have not been able to find a mechanism to bring the predicted quark mass differences in agreement. On the other hand it seems that a mass difference of $md-mu=2.1 MeV$ is consistent for most cases.
+We have not been able to find a mechanism to bring the predicted quark mass differences in agreement. On the other hand it seems that a mass difference of $md-mu=2.1 MeV$ is consistent for the hadrons composed of light quarks.
 
 Taking this mass difference as input (also see tables \ref{tab:mesonsum},\ref{tab:baryonsum}), we can make a prediction of the mass differences of states with higher spin. This is done by calculating the energy of, say, a neutron and a proton at some angular momentum and substracting. The difference in energy of course coming from the different quark masses and charges. Some values are in table \ref{tab:projectedmassdiff}.
 
@@ -1439,23 +1452,23 @@ Taking this mass difference as input (also see tables \ref{tab:mesonsum},\ref{ta
 \centering
 \begin{tabular}{|l|c|c|c|c|c|c|}
 \hline
- Hadron & $\alpha'$ & endpoint mass$\left[MeV\right]$ & $|q_1q_2|$ & $\tilde{a}$ & $S$ \\ 
+ Hadron & $\alpha'$ & Hadron Mass $\left[MeV\right]$ & $|q_1q_2|$ & $\tilde{a}$ & $S$ \\ 
  \hline
-Proton & 0.94 & 938.272 & $\frac{2}{9}$ & \{-1.157,-0.3\} & $\frac{1}{2}$  \\
-Neutron & 0.94 & 939.565 & $-\frac{1}{9}$ & \{-1.157,-0.3\} & $\frac{1}{2}$  \\
+Proton & 0.94 & 938.272 & $\frac{2}{9}$ & \{-0.9,-0.31\} & $\frac{1}{2}$ \\
+Neutron & 0.94 & 939.565 & $-\frac{1}{9}$ & \{-0.9,-0.31\} & $\frac{1}{2}$ \\
 $\rho^{+}$ & 0.86 & 775.96 & $\frac{2}{9}$ & \{-0.5,-0.1\} & 1  \\
 $\rho^{0}$ & 0.86 & 775.26 & $-\frac{5}{18}$ & \{-0.5,-0.1\} & 1  \\
 $K^{*+}$ & 0.96 & 889.11 & $\frac{2}{9}$ & \{-0.1,-0.06\} & 1  \\
 $K^{*0}$ & 0.96 & 895.81 & $-\frac{1}{9}$ & \{-0.1,-0.06\} & 1  \\
-$\Sigma^+$ & 0.95 & 1189.3 & $\frac{2}{9}$ & $\{-0.193513,-0.128062\}$ & $\frac{1}{2}$  \\
-$\Sigma^0$ & 0.95 & 1192.6 & $-\frac{1}{9}$ & $\{-0.193513,-0.128062\}$ & $\frac{1}{2}$  \\
-$\Xi^0$ & 0.94 & 1314.86 & $-\frac{1}{9}$ & $\{-0.184,-0.035\}$ & $\frac{1}{2}$  \\
-$\Xi^-$ & 0.94 & 1321.71 & $\frac{2}{9}$ & $\{-0.184,-0.035\}$ & $\frac{1}{2}$  \\
-$D^0$ & 0.86 & 1864.84 & $-\frac{4}{9}$ & $\{-0.14,0\}$ & 1  \\
-$D^+$ & 0.86 & 1869.61 & $\frac{2}{9}$ & $\{-0.14,0\}$ & 1  \\
+$\Sigma^+$ & 0.95 & 1189.3 & $\frac{2}{9}$ & $\{-0.19,-0.12\}$ & $\frac{1}{2}$  \\
+$\Sigma^0$ & 0.95 & 1192.6 & $-\frac{1}{9}$ & $\{-0.19,-0.12\}$ & $\frac{1}{2}$  \\
+$\Xi^0$ & 0.94 & 1314.86 & $-\frac{1}{9}$ & $\{-0.18,-0.03\}$ & $\frac{1}{2}$  \\
+$\Xi^-$ & 0.94 & 1321.71 & $\frac{2}{9}$ & $\{-0.18,-0.03\}$ & $\frac{1}{2}$  \\
+$D^0$ & 0.86 & 1864.84 & $-\frac{4}{9}$ & $\{-0.14,0\}$ & 0  \\
+$D^+$ & 0.86 & 1869.61 & $\frac{2}{9}$ & $\{-0.14,0\}$ & 0  \\
 \hline
 \end{tabular}
-\caption{Slope, Endpoint masses, quark charges and casimir values used in the calculation of the mass differences. Casimir value pairs correspond to values taken for lower and upper limit for mass differences.}
+\caption{Slope, Hadron masses, quark charges and casimir values used in the calculation of the mass differences. Casimir value pairs correspond to values taken for lower and upper limit for mass differences.}
 \label{tab:massdiffdata}
 \end{table}
 
