@@ -1240,13 +1240,24 @@ In the case of equal quark masses the boundary equations, energy and angular mom
 \begin{subequations}
 \label{eq:regge}
 \begin{align}
-&E=\cfrac{2T}{\omega}\sin^{-1}(\beta))+\gamma_{1}m_{1}+\gamma_{2}m_{2}+\frac{q_{1}q_{2}\omega}{\beta_{1}\beta_{2}\sin(\Delta\theta)+\Delta\theta}-\frac{\pi}{2}\frac{\tilde{a}\omega}{\beta_{1}+\beta_{2}}\\
-&J=T\cfrac{-\cfrac{\beta_{1}}{\gamma_{1}}+sin^{-1}\left(\beta_{1}\right)-\cfrac{\beta_{2}}{\gamma_{2}}+sin^{-1}\left(\beta_{2}\right)}{2\omega^{2}}+m_{1}\cfrac{\gamma_{1}\beta_{1}^{2}}{\omega}+m_{2}\cfrac{\gamma_{2}\beta_{2}^{2}}{\omega}-2q_{1}q_{2}\beta_{1}\beta_{2}\frac{cos\left(\Delta\theta\right)}{\beta_{1}\beta_{2}sin\left(\Delta\theta\right)+\Delta\theta}\\
-&\Delta\theta^{2}=\beta_{1}^{2}+\beta_{2}^{2}+2\beta_{1}\beta_{2}cos\left(\Delta\theta\right)\\
-&\gamma_{1}^{2}\beta_{1}m_{1}=\gamma_{2}^{2}\beta_{2}m_{2}\\
-&\frac{\pi  \omega ^2 (a-S)}{2 (\beta_1+\beta_2)^2}-\frac{\beta_1 m_1 \omega }{\sqrt{1-\beta_1^2}}+T\sqrt{1-\beta_1^2}+\\
-&-q_1 q_2 \omega ^2 \frac{\beta_1 \left(2 \beta_1^2 \beta_2^2+2 \beta_1 \left(\beta_2^2+1\right) \beta_2 \cos (\Delta \theta )+2 \beta_1 \beta_2 \Delta \theta  \sin (\Delta \theta )+3 \beta_2^2+2\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag\\
-&-q_1 q_2 \omega ^2\frac{\beta_2 \left(\left(\beta_1^2-2 \Delta \theta ^2+2\right) \cos (\Delta \theta )+\beta_1^2 \cos (\Delta \theta )+\beta_1 \beta_2 \cos (2 \Delta \theta )+2 \Delta \theta  \sin (\Delta \theta )\right)}{2 (\beta_1 \beta_2 \sin (\Delta \theta )+\Delta \theta )^3}=0\notag
+&E=\cfrac{2T}{\omega}\sin^{-1}(\beta))+\gamma\left(m_{1}+m_{2}\right)+\frac{q_{1}q_{2}\omega}{\beta^2\sin(\Delta\theta)+\Delta\theta}-\frac{\pi}{4}\frac{\tilde{a}\omega}{\beta}\\
+&J=T\cfrac{-\cfrac{\beta}{\gamma}+sin^{-1}\left(\beta\right)}{\omega^{2}}+(m_{1}+m_{2})\cfrac{\gamma\beta^{2}}{\omega}-2q_{1}q_{2}\beta^2\frac{cos\left(\Delta\theta\right)}{\beta^2sin\left(\Delta\theta\right)+\Delta\theta}\\
+&\Delta\theta^{2}=2\beta^{2}+2\beta^2cos\left(\Delta\theta\right)\\
+&\frac{\pi \omega ^2 (a-S)}{8 \beta^2}-\frac{\beta m_1 \omega }{\sqrt{1-\beta^2}}+T\sqrt{1-\beta^2}+\\
+&-q_1 q_2 \omega^2 \frac{\beta \left(2 \beta^4+2\beta^2 \left(\beta^2+1\right) \cos (\Delta \theta )+2 \beta^2 \Delta \theta  \sin (\Delta \theta )+3 \beta^2+2\right)}{2 (\beta^2 \sin (\Delta \theta )+\Delta \theta )^3}+\notag\\
+&-q_1 q_2 \omega^2\frac{\beta \left(\left(\beta^2-2 \Delta \theta ^2+2\right) \cos (\Delta \theta )+\beta^2 \cos (\Delta \theta )+\beta^2 \cos (2 \Delta \theta )+2 \Delta \theta  \sin (\Delta \theta )\right)}{2 (\beta^2 \sin (\Delta \theta )+\Delta \theta )^3}=0\notag
+\end{align}
+\end{subequations}
+
+In the case of one mass negligible with respect to the other the boundary equations, energy and angular momentum read:
+
+\begin{subequations}
+\label{eq:regge}
+\begin{align}
+&E=\cfrac{T}{\omega}\sin^{-1}(\beta)+\gamma m_{1}+m_{2}+\frac{q_{1}q_{2}\omega}{\beta}-\frac{\pi}{2}\frac{\tilde{a}\omega}{\beta}\\
+&J=T\cfrac{-\cfrac{\beta}{\gamma}+sin^{-1}\left(\beta\right)}{2\omega^{2}}+m_{1}\cfrac{\gamma\beta^{2}}{\omega}\\
+&\frac{\pi  \omega ^2 (a-S)}{2 \beta^2}-\frac{\beta m_1 \omega }{\sqrt{1-\beta^2}}+T\sqrt{1-\beta^2}-\frac{q_1 q_2 \omega ^2}{\beta^2}=0 \\
+&\Delta\theta=\beta
 \end{align}
 \end{subequations}
 
