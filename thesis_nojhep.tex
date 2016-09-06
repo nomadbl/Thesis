@@ -1231,9 +1231,7 @@ In section \ref{sec:confrontmassdiff} we present the results of the calculation 
 \subsection{The Regge Trajectories}
 \label{sec:reggefit}
 
-Using the methods outlined in the previous section, we numerically fit the Regge trajectories of our model to PDG data for the hadrons.
-
-We separate the treatment into the cases where the quark masses are approximately equal and the cases where the quark masses are expected to differ significantly. In the so called "symmetric" cases we assume $m_{1}=m_{2}$ greatly simplifying the equations. This is justified in the cases of hadrons composed of only light up or down quarks whose masses do not differ by much. Likewise in the case of greatly differing masses we take the first approximation that the larger mass is stationary, with the other mass orbiting it. This approximation is used in the cases of hadrons composed of one light quark and a heavy quark such as the charm. The case of the a light quark and a strange quark seems to be somewhat intermediate and we use the symmetric approximation in that case. It should be kept in mind the masses discussed here are neither constituent quark masses nor quark current masses, but are a new class of masses associated with the string hanging from the flavour brane. In both cases we take the electromagnetic fine structure constant $\alpha_{e}=\frac{1}{137}$.
+Using the methods outlined in the previous section, we numerically fit the Regge trajectories of our model to PDG data for the hadrons. We separate the treatment into the cases where the quark masses are approximately equal and the cases where the quark masses are expected to differ significantly. In the so called "symmetric" cases we assume $m_{1}=m_{2}$ greatly simplifying the equations. This method is used to fit the trajectories of the flavourless hadrons, determining the approximately degenerate masses of the up and down quarks. In the case of greatly differing masses we take the first approximation that the larger mass is stationary, with the other mass orbiting it. This approximation is used in the cases of hadrons composed of one light quark and a heavy quark such as the $D$ meson. The mass of the light quark is determined from the flavourless hadron fits, and we determine the mass of the charm quark. The case of the a light quark and a strange quark seems to be somewhat intermediate and we use the symmetric approximation in that case. It should be kept in mind the masses discussed here are neither constituent quark masses nor quark current masses, but are a new class of masses associated with the string hanging from the flavour brane. In both cases we take the electromagnetic fine structure constant $\alpha_{e}=\frac{1}{137}$.
 
 In the case of equal quark masses the boundary equations, energy and angular momentum read:
 
@@ -1260,6 +1258,21 @@ In the case of one mass negligible with respect to the other the boundary equati
 &\Delta\theta=\beta
 \end{align}
 \end{subequations}
+
+Where we have set $\beta_2=0$ so that one of the endpoints is stationary, and $L$ is the string length. The accuracy of the procedure can be estimated by observing that by the relation
+\begin{equation*}
+\gamma_1^2 m_1 \beta_1=\gamma_2^2 m_2 \beta_2
+\end{equation*}
+the velocity in next order of the "stationary" endpoint is 
+\begin{equation}
+\beta^{(1)}_2\approx\frac{m_1}{m_2} \beta_1
+\end{equation}
+So if the correction to the energy is of order $O(\beta)$ then the correction in the energy is of order
+\begin{equation*}
+\Delta E \propto \frac{m_1}{m_2} \beta_1
+\end{equation*}
+
+
 
 In previous work \cite{Sonnenschein14,Sonnenschein15} the model with no electric charge was confronted with PDG data. There the intercept was introduced by adding a constant to the angular momentum (method 1 discussed in section \ref{sec:regge}). When done in such a way, there is no way of distinguishing between fits to the total angular momentum $J$ of a hadron, and fits to the orbital angular momentum $J_{orbital}$, of the same hadron, as the intercept could always be adjusted to give either plot. However when introducing an intercept using the casimir energy prescription we can clearly distinguish between the two fits. We find that we cannot fit the model to the total angular momentum $J$ of the hadron. Examples for the $\rho$ and $K^{*}$ mesons can be seen in figure \ref{fig:jfit}. The reason is that the casimir coefficient must be \emph{repulsive} in order for the hadron to be stable at the limit where it is not spinning. As was mentioned in section \ref{sec:regge} this is satisfied when $\tilde{a}<0$. Under this limitation we cannot bring the trajectory to fit in the $J$ plane. However when we plot the same trajectory in the $\left(L,M^2\right)$ plane this intercept disappears: it is just the difference between $J$ and $L$. Therefore, all the fits will be done for $\left(L,E^{2}\right)$. In order to determine the orbital angular momentum from the total angular momentum and parity we use the relations:
 \begin{align*}
@@ -1473,7 +1486,7 @@ As explained in \ref{sec:massdiff} the goal of the calculation requires obtainin
 
 The inconsistency for the $K^{*}$ is made even more clear by figure \ref{fig:kaonmassdiff} which compares the possible $m_u/m_d$ quark mass differences as a function of the casimir coefficient $a$ (the "intercept"), for the Kaon and the neutron/proton. Here it is evident that for most values of the intercept, the obtained mass differences are not consistent. In our case the values (shown in table \ref{tab:massdiffdata} and taken from the Regge fits as previously mentioned) for "a" do not allow for a consistency even if some variation from them is allowed.
 
-The mass difference calculated from the $D$ trajectory turns out to be negative which is also not consistent with other calculations. We have tried using parameters from both a symmetric and a non symmetric fit to the $D$ trajectory. The results are displayed in table \ref{ASDMD}. It seems that allowing for asymmetric masses can improve the situation in the quark mass difference calculation but not bring the mass difference to a positive value.
+The mass difference calculated from the $D$ trajectory turns out to be negative which is also not consistent with other calculations. We have tried using parameters from both a symmetric and a non symmetric fit to the $D$ trajectory. The results are displayed in table \ref{ASDMD}. It seems that allowing for asymmetric masses can improve the situation in the quark mass difference calculation but cannot bring the mass difference to a positive value.
 
 We have not been able to find a mechanism to bring the predicted quark mass differences in agreement. On the other hand it seems that a mass difference of $md-mu=2.1 MeV$ is consistent for the hadrons composed of light quarks.
 
@@ -1534,29 +1547,29 @@ $M_{K^{*n}}-M_{K^{*+}}$ & 0.35 & 0.465 & 0.50 \\ \hline
 \begin{table}
 $\begin{array}{|c|c|c|c|c|c|} \hline
  \text{u Mass[MeV]} & \left.\text{$\alpha $'[}\text{GeV}^{-2}\right] & \text{charm Mass[MeV]} & \tilde{a} & m_d-m_u\text{[MeV]} & \frac{\chi^2_m}{\chi^2_l} \\ \hline
- 250 & 0.45 & 1100 & -0.18817 & -1.91596 & 0.729883 \\
- 250 & 0.45 & 1185 & -0.12005 & -3.6112 & 0.877145 \\
- 250 & 0.86 & 1499 & -0.0123432 & -14.8343 & 0.875704 \\
- 250 & 0.86 & 1548 & 0 & -29.9253 & 0.045734 \\
- 250 & 0.86 & 1583 & 0 & -29.9112 & 0.943584 \\
- 150 & 0.9 & 1568 & -0.0332685 & -6.59646 & 0.957694 \\ \hline
- 150 & 0.9 & 1633 & 0 & -29.1554 & 0.0726242 \\
- 150 & 0.9 & 1668 & 0 & -29.1052 & 0.862301 \\
- 150 & 0.86 & 1544 & -0.0440218 & -5.30454 & 0.966513 \\
- 150 & 0.86 & 1594 & -0.0121335 & -15.0193 & 0.0329892 \\ \hline
- 100 & 0.86 & 1560 & -0.0601328 & -3.82673 & 0.915026 \\
- 100 & 0.86 & 1628 & -0.0210648 & -9.96614 & 0.0435475 \\
- 100 & 0.86 & 1677 & 0 & -29.9022 & 0.920127 \\
- 100 & 0.9 & 1585 & -0.0503923 & -4.42282 & 0.941341 \\
- 100 & 0.9 & 1699 & 0 & -29.1311 & 0.945629 \\ \hline
- 50 & 0.86 & 1594 & -0.0656124 & -3.45495 & 0.366566 \\
- 50 & 0.86 & 1594 & -0.0656124 & -3.45495 & 0.366566 \\
- 50 & 0.9 & 1594 & -0.0697484 & -3.02502 & 0.923992 \\
- 50 & 0.9 & 1594 & -0.0697484 & -3.02502 & 0.923992 \\ \hline
- 5 & 0.7 & 1450 & -0.189254 & -0.575249 & 0.638414 \\
- 5 & 0.7 & 1578 & -0.0732576 & -3.85187 & 0.889484 \\
- 5 & 0.86 & 1569 & -0.117835 & -1.34976 & 0.895545 \\
- 5 & 0.86 & 1695 & -0.0331161 & -6.88527 & 0.935499 \\ \hline
+ 250 & 0.45 & 1100 & -0.18 & -1.91596 & 0.729883 \\
+ 250 & 0.45 & 1185 & -0.12 & -3.6112 & 0.877145 \\
+ 250 & 0.86 & 1499 & -0.01 & -14.8343 & 0.875704 \\
+ 250 & 0.86 & 1548 & 0 & -29.92 & 0.045734 \\
+ 250 & 0.86 & 1583 & 0 & -29.91 & 0.943584 \\
+ 150 & 0.9 & 1568 & -0.03 & -6.59646 & 0.957694 \\ \hline
+ 150 & 0.9 & 1633 & 0 & -29.15 & 0.0726242 \\
+ 150 & 0.9 & 1668 & 0 & -29.1 & 0.862301 \\
+ 150 & 0.86 & 1544 & -0.04 & -5.30454 & 0.966513 \\
+ 150 & 0.86 & 1594 & -0.01 & -15.0193 & 0.0329892 \\ \hline
+ 100 & 0.86 & 1560 & -0.06 & -3.82673 & 0.915026 \\
+ 100 & 0.86 & 1628 & -0.02 & -9.96614 & 0.0435475 \\
+ 100 & 0.86 & 1677 & 0 & -29.9 & 0.920127 \\
+ 100 & 0.9 & 1585 & -0.05 & -4.42282 & 0.941341 \\
+ 100 & 0.9 & 1699 & 0 & -29.13 & 0.945629 \\ \hline
+ 50 & 0.86 & 1594 & -0.06 & -3.45495 & 0.366566 \\
+ 50 & 0.86 & 1594 & -0.06 & -3.45495 & 0.366566 \\
+ 50 & 0.9 & 1594 & -0.07 & -3.02502 & 0.923992 \\
+ 50 & 0.9 & 1594 & -0.07 & -3.02502 & 0.923992 \\ \hline
+ 5 & 0.7 & 1450 & -0.19 & -0.575249 & 0.638414 \\
+ 5 & 0.7 & 1578 & -0.07 & -3.85187 & 0.889484 \\
+ 5 & 0.86 & 1569 & -0.11 & -1.34976 & 0.895545 \\
+ 5 & 0.86 & 1695 & -0.03 & -6.88527 & 0.935499 \\ \hline
 \end{array}$
 \label{ASDMD}
 \caption{Fits of D meson and up/down quark mass differences for various choices of parameters.}
