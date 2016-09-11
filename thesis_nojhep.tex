@@ -1310,6 +1310,20 @@ In the following, we will present the goodness of the fit in the parameter space
 \end{equation}
 $M_{i,model}^{2},M_{i,pdg}^{2}$ are the measured and calculated masses squared of the i-th particle in the trajectory. This quantity is calculated for any given fit. It is then used to compare different fits, with the linear fit as a reference. Figures \ref{fig:mesonfits1},\ref{fig:mesonfits2},\ref{fig:baryonfits} show the mass symmetric fits (endpoint masses assumed to be equal for simplicity),plotting $\frac{\chi^{2}}{\chi_{linear}^{2}}$ as a function of the endpoint masses $m$[MeV] (x-axis) and slope $\alpha'[MeV^{-2}]$ (y-axis). Tables \ref{tab:mesonsum},\ref{tab:baryonsum} are summary tables showing the slope and endpoint masses obtained in the optimal symmetric fit. Tables \ref{tab:mesonsumdorin},\ref{tab:baryonsumdorin} are the corresponding quantities obtained in references \cite{Sonnenschein14} and \cite{Sonnenschein15}.
 
+\begin{table}
+\centering
+\begin{tabular}{|l|c|}
+\hline
+Quark type & Mass range [$MeV$] \\ \hline
+u & 150\\ \hline
+d & 152.1 \\ \hline
+s & 345\\ \hline
+c & 1594\\ \hline
+\end{tabular}
+\caption{Estimated quark masses. u/d mass difference is taken from mass difference calculation.}
+\label{tab:quarkmasses}
+\end{table}
+
  \begin{figure}[!h]
  \centering
  	\subfloat[Pion fit]{
@@ -1344,8 +1358,8 @@ $M_{i,model}^{2},M_{i,pdg}^{2}$ are the measured and calculated masses squared o
  	\subfloat[D fit]{
  	\includegraphics[scale=0.5]{figures/DFit.png}}
  	~
-% 	\subfloat[B fit]{
-% 	\includegraphics[scale=0.5]{figures/BFit.png}}
+ 	%\subfloat[B fit]{
+	%\includegraphics[scale=0.5]{figures/BFit.png}}
  	~
  	\subfloat[$\Upsilon$ fit]{
  	\includegraphics[scale=0.5]{figures/YFit.png}}
@@ -1404,11 +1418,12 @@ $\Phi$  & 0.89-1.09 & 345-425 \\
 $\kappa$  & $>$ 0.845 & $>$ 218 \\
 $K$ & 0.57-0.86 & 0-228 \\
 $D$ & 0.58-1 & 733-923 \\
-$B$ & 0.8-0.9 & 2630-2650 \\
+$D$ & 0.86 & $m_u=150$, $m_c=1594$ \\
+%$B$ & 0.48-1 & 2480-2660 \\
 $\varUpsilon$  & 0.24-0.4 & 4095-4450 \\
 \hline
 \end{tabular}
-\caption{Meson Fits Summary Table. Endpoint mass is the same on both endpoints.}
+\caption{Meson Fits Summary Table. The fit is symmetric unless endpoint masses indicate different endpoint masses.}
 \label{tab:mesonsum}
 %\end{table}
 
@@ -1463,20 +1478,6 @@ $\Xi$  & 1.455 & 660 \\
 
 We can see that for the most part, the masses obtained in the two kinds of fits are comparable, while the slopes obtained are mostly inconsistent. From our Regge fit we can estimate the masses of the various quarks  (see table \ref{tab:quarkmasses}).
 
-\begin{table}
-\centering
-\begin{tabular}{|l|c|}
-\hline
-Quark type & Mass range [$MeV$] \\ \hline
-u & 150\\ \hline
-d & 152.1 \\ \hline
-s & 560-601\\ \hline
-c & 1331-1396\\ \hline
-\end{tabular}
-\caption{Estimated quark masses. u/d mass difference is taken from mass difference calculation.}
-\label{tab:quarkmasses}
-\end{table}
-
 \FloatBarrier
 \subsection{The Mass Differences}
 \label{sec:confrontmassdiff}
@@ -1486,7 +1487,7 @@ As explained in \ref{sec:massdiff} the goal of the calculation requires obtainin
 
 The inconsistency for the $K^{*}$ is made even more clear by figure \ref{fig:kaonmassdiff} which compares the possible $m_u/m_d$ quark mass differences as a function of the casimir coefficient $a$ (the "intercept"), for the Kaon and the neutron/proton. Here it is evident that for most values of the intercept, the obtained mass differences are not consistent. In our case the values (shown in table \ref{tab:massdiffdata} and taken from the Regge fits as previously mentioned) for "a" do not allow for a consistency even if some variation from them is allowed.
 
-The mass difference calculated from the $D$ trajectory turns out to be negative which is also not consistent with other calculations. We have tried using parameters from both a symmetric and a non symmetric fit to the $D$ trajectory. The results are displayed in table \ref{tab:ASDMD}. It seems that allowing for asymmetric masses can improve the situation in the quark mass difference calculation but cannot bring the mass difference to a positive value.
+The mass difference calculated from the symmetric fit to the $D$ trajectory turns out to be negative which is also not consistent with other calculations. We have tried using parameters from both a symmetric and a non symmetric fit to the $D$ trajectory. The results are displayed in table \ref{tab:ASDMD}. It seems that allowing for asymmetric masses can improve the situation in the quark mass difference calculation but cannot bring the mass difference to a positive value.
 
 We have not been able to find a mechanism to bring the predicted quark mass differences in agreement. On the other hand it seems that a mass difference of $md-mu=2.1 MeV$ is consistent for the hadrons composed of light quarks.
 
@@ -1582,11 +1583,11 @@ u Mass[MeV] & $\alpha'$[$GeV^{-2}$] & charm Mass[MeV] & $\tilde{a}$ & $m_d-m_u$[
 
 In this thesis we have explored the properties of the string with massive and charged ends which corresponds holographically to hadrons. The casimir energy which is generated by quantum fluctuations of the string induces a repulsive force which keeps the string from collapsing in the case of attractive charges. The casimir energy together with the electromagnetic interaction is responsible for the Regge intercept. The repulsive nature of the casimir term is manifested as the constraint $\tilde{a}<0$. This is also motivated by considering a zero spin state obeying linear trajectories which gives $J=\alpha'M^2+\tilde{a}=0$ so that $\tilde{a}=-\alpha'M^2<0$.
 
-The resulting model was confronted with PDG data and the model parameters extracted for various hadrons. A new calculation which was attempted is the determination of the u/d mass difference. A mass difference of between the u/d quarks exists in the range of $(-5)-10MeV$. the most consistent value for it is $2.1 MeV$. The inconsistency is most prevalent when considering hadrons containing more massive quarks such as the \textbf{D}, \textbf{K} and \textbf{$\kappa$} mesons.
+The resulting model was confronted with PDG data and the model parameters extracted for various hadrons. A new calculation which was attempted is the determination of the u/d mass difference. A mass difference between the u/d quarks exists in the range of $(-15)-10MeV$. The inconsistency is most prevalent when considering hadrons containing more massive quarks such as the \textbf{D} and \textbf{$\kappa$} mesons.
 
 We suspect the inconsistencies in the calculated u/d mass difference is due to the system having some more unusual behaviour in the asymmetric masses case. As can be seen from the analysis in section \ref{sec:boundaryequations}, further research is needed to find a better solution of the charged system in the asymmetric case. This could change the results of the Regge trajectories in the asymmetric case and through the change in the parameters also change the mass difference results. Hopefully making all the mass differences consistent. The main difficulty in this direction is the complexity of the underlying equations. One option could be to find a numeric solution to the full equations of motion, but we have not been able to do this to date. Another option would be to perturbatively solve the equations, taking $q_1q_2$ as the small parameter. This is left for future work and is beyond the scope of this thesis.
 
-In conclusion, we get similar parameters for the Regge trajectory fits and we can determine the u/d quark mass difference. It should be emphasised the mass parameters in our model, as well as their differences, are not quark model masses. Future research would address determining more precisely the electromagnetic radiation width relative to the strong interaction width, incorporating leptons into the model and incorporating the weak interaction into the model. 
+In conclusion, we get similar parameters for the Regge trajectory fits and we can determine the u/d quark mass difference. It should be emphasised the mass parameters in our model, as well as their differences, are not constituent quark model masses or current masses. Future research would address determining more precisely the electromagnetic radiation width relative to the strong interaction width, incorporating leptons into the model and incorporating the weak interaction into the model. 
 \appendix
 \FloatBarrier
 \section{Conventions}
